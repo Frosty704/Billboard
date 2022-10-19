@@ -1,7 +1,7 @@
 # Frosty's Billboard
 
 Frosty's billboard is a container for the KAT (KillFrenzyAvatarText) https://github.com/killfrenzy96/KillFrenzyAvatarText
-allowing you to have a chatbox in your hand with the ability to drop it in the world, anchoring it there, resizing it, grabbing and moving it around with your right (or left!) hand or just having it constrained to your head like a speech bubble!
+allowing you to have a chatbox in your hand with the ability to drop it in the world, anchoring it there, resizing it, grabbing and moving it around with your right hand or just having it constrained to your head like a speech bubble!
 
 It uses 394 polygons, 3 material slots, (4 including the KAT) and 12 bits of parameter space.
 
