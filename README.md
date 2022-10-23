@@ -43,4 +43,4 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 
 
 # Discord
-Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) 
+Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or add me Frosty704#4638
