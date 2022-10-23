@@ -24,7 +24,8 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 
 # Showcase
 
-
+Someone have your shaders/custom animations hidden? A fallback message will show instead. 
+![image](https://user-images.githubusercontent.com/36753686/197409019-9f43ed16-9dca-46ac-8b22-08860e9b564c.png)
 
 
 
