@@ -20,4 +20,25 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 - VRChat SDK3
 
 
+# Showcase
+
+
+
+
+
+
 # Installation
+
+
+
+
+
+
+
+
+
+
+
+
+# Discord
+Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) 
