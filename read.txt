@@ -1,0 +1,1 @@
+if you are having trouble with the text getting bigger as you get farther away/emotes looking wonky, use the kat 1.2.7 shader https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/download/1.2.7/KAT_UnityPackage_v1.2.7.unitypackage
