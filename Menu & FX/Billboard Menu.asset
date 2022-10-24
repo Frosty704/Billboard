@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
+  m_Name: Billboard Menu
+  m_EditorClassIdentifier: 
+  controls:
+  - name: Hand Attach
+    icon: {fileID: 2800000, guid: 9f4bb8a5be40ce640a0639a35166173e, type: 3}
+    type: 102
+    parameter:
+      name: KAT_Hand
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Billboard Visible
+    icon: {fileID: 2800000, guid: d5e00fcc91fca6947878e5fdbce2da18, type: 3}
+    type: 102
+    parameter:
+      name: KAT_Visible
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Resize Text - default 30%
+    icon: {fileID: 2800000, guid: 8d4104a3723962c4eadd6d361a08f7d7, type: 3}
+    type: 203
+    parameter:
+      name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: KAT_Resize
+    labels: []
+  - name: Clear Text
+    icon: {fileID: 2800000, guid: e563f1f549ba4e346b6095ba8d9b1a8c, type: 3}
+    type: 101
+    parameter:
+      name: KAT_Pointer
+    value: 255
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
+  - name: Enable Grabbing
+    icon: {fileID: 2800000, guid: 4f2f87bf19db2684cab7f02287142a70, type: 3}
+    type: 102
+    parameter:
+      name: KAT_EnableGrab
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters: []
+    labels: []
