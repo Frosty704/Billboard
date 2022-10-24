@@ -12,7 +12,8 @@ It uses 394 polygons, 3 material slots, (4 including the KAT) and 11 bits of par
 This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allowing speech to text (or text to text) outputting to the KAT! https://github.com/VRCWizard/TTS-Voice-Wizard 
 
 
-# Requirements
+# Requirements 
+- **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
 - [KillFrenzyAvatarText 1.2.7](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.2.7) 1.3.0+ has shader changes that makes it a bit wonky.
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
 - [Poiyomi 8.0](https://github.com/poiyomi/PoiyomiToonShader) 
@@ -22,7 +23,7 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 - VRChat SDK3
 
 
-# Showcase
+# Showcase *wip*
 
 Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 ![image](https://user-images.githubusercontent.com/36753686/197409019-9f43ed16-9dca-46ac-8b22-08860e9b564c.png)
@@ -34,7 +35,7 @@ Someone have your shaders/custom animations hidden? A fallback message will show
 
 
 
-
+https://user-images.githubusercontent.com/36753686/197438755-0d507be5-078b-46e8-ae2e-fed14e2798fb.mp4
 
 
 
@@ -45,3 +46,7 @@ Someone have your shaders/custom animations hidden? A fallback message will show
 
 # Discord
 Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or add me Frosty704#4638
+
+
+
+
