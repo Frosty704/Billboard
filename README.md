@@ -33,7 +33,7 @@ Someone have your shaders/custom animations hidden? A fallback message will show
 
 # Installation
 
-
+oops forgot to add the menu installation gotta fix that lmao
 
 https://user-images.githubusercontent.com/36753686/197438755-0d507be5-078b-46e8-ae2e-fed14e2798fb.mp4
 
