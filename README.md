@@ -34,7 +34,7 @@ https://github.com/Frosty704/Billboard/releases
 
 # Video Installation
 
-A written installation guide can be found at https://github.com/Frosty704/Billboard/wiki/Install
+A written step-by-step installation guide can be found at https://github.com/Frosty704/Billboard/wiki/Install
 
 https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-b148-f12b81fe04a5.mp4
 
