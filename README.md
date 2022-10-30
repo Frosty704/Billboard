@@ -29,7 +29,8 @@ Someone have your shaders/custom animations hidden? A fallback message will show
 ![image](https://user-images.githubusercontent.com/36753686/197409019-9f43ed16-9dca-46ac-8b22-08860e9b564c.png)
 
 
-
+# Download
+https://github.com/Frosty704/Billboard/releases
 
 # Video Installation
 
