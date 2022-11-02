@@ -1,7 +1,9 @@
 ![header](https://user-images.githubusercontent.com/36753686/199162650-07b260bb-94d0-4bbd-be3f-fffd56edb8d4.png)
 
-
-
+[![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3/Frosty.Billboard.unitypackage) 
+[![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
+[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
+# About
 
 Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText)
 allowing you to have a speech bubble in your hand with the ability to drop it in the world, anchoring it there, resizing it, grabbing and moving it around with your right hand or just having it move with your head like a speech bubble!
@@ -35,8 +37,6 @@ Spotify output to KAT using [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-
 - Unity 2019.4.31f and basic knowledge of Unity.
 - This prefab was made with write defaults off, your avatar should too to avoid potential issues.
 
-# Download
-https://github.com/Frosty704/Billboard/releases
 
 # Video Installation
 
