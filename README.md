@@ -47,9 +47,11 @@ https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-
 
 # Extra Functionality
 
-placeholder
+You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. TTS-Voice-Wizard's STTTS keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear
 
+Here is my setup
 
+![image](https://user-images.githubusercontent.com/36753686/199845675-70b3defd-4e18-410c-8ece-e5b1cafc785a.png)
 
 
 
