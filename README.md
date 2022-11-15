@@ -25,7 +25,7 @@ Spotify output to KAT using [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-
 
 
 ### Someone have your shaders/custom animations hidden? A fallback message will show instead. 
-![image](https://user-images.githubusercontent.com/36753686/197409019-9f43ed16-9dca-46ac-8b22-08860e9b564c.png)
+![image](https://user-images.githubusercontent.com/36753686/201904728-772a6473-6b14-4175-8437-612a9babe63b.png)
 
 # Requirements 
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
