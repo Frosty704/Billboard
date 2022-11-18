@@ -1,6 +1,6 @@
 ![header](https://user-images.githubusercontent.com/36753686/199162650-07b260bb-94d0-4bbd-be3f-fffd56edb8d4.png)
 
-[![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3/Frosty.Billboard.unitypackage) 
+[![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.0.1/Frosty.Billboard.v3.0.1.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
 # About
