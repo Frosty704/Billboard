@@ -17,8 +17,9 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 
 
 # Features & Showcase
-Spotify output to KAT using [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard )
-![image](https://user-images.githubusercontent.com/36753686/197398360-ffad9c68-876b-4680-98fd-96e8c8ec8de7.png)
+
+for cute pictures i took with it-
+https://github.com/Frosty704/Billboard/wiki/Home-%7C-Showcase
 
 ### Showcase video - Links to streamable
 [![Showcase](https://user-images.githubusercontent.com/36753686/199163258-6c304c18-da1d-4a83-b277-dc014a24e10b.png)](https://streamable.com/e/jeu2gx "Showcase")
