@@ -19,7 +19,7 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 # Features & Showcase
 
 for cute pictures i took with it-
-https://github.com/Frosty704/Billboard/wiki/Home-%7C-Showcase
+https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 
 ### Showcase video - Links to streamable
 [![Showcase](https://user-images.githubusercontent.com/36753686/199163258-6c304c18-da1d-4a83-b277-dc014a24e10b.png)](https://streamable.com/e/jeu2gx "Showcase")
