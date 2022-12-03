@@ -41,7 +41,7 @@ https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 
 # Video Installation
 
-A written step-by-step installation guide can be found at https://github.com/Frosty704/Billboard/wiki/Install
+A written step-by-step installation guide can be found at https://github.com/Frosty704/Billboard/wiki/2.-Install
 
 https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-b148-f12b81fe04a5.mp4
 
