@@ -1,6 +1,6 @@
 ![header](https://user-images.githubusercontent.com/36753686/199162650-07b260bb-94d0-4bbd-be3f-fffd56edb8d4.png)
 
-[![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.0.2/Frosty.Billboard.v3.0.2.unitypackage)
+[![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.0.2fix/Frosty.Billboard.v3.0.2fix.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
 # About
@@ -18,7 +18,7 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 
 # Features & Showcase
 
-for cute pictures i took with it-
+Picture showcase-
 https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 
 ### Showcase video - Links to streamable
@@ -48,7 +48,7 @@ https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-
 
 # Extra Functionality
 
-You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. TTS-Voice-Wizard's STTTS keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear
+You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. TTS-Voice-Wizard's STTTS keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear and typing dots reappear once you STT again.
 
 Here is my setup
 
