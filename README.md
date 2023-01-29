@@ -1,4 +1,4 @@
-![header](https://user-images.githubusercontent.com/36753686/199162650-07b260bb-94d0-4bbd-be3f-fffd56edb8d4.png)
+![newgithub](https://user-images.githubusercontent.com/36753686/215336131-2fde0b7c-8810-4cd3-a4fc-da05f9bb432d.png)
 
 [![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.0.2fix/Frosty.Billboard.v3.0.2fix.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
@@ -18,12 +18,11 @@ This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allow
 
 # Features & Showcase
 
-Picture showcase-
+Picture Showcase-
 https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 
-### Showcase video - Links to streamable
-[![Showcase](https://user-images.githubusercontent.com/36753686/199163258-6c304c18-da1d-4a83-b277-dc014a24e10b.png)](https://streamable.com/e/jeu2gx "Showcase")
-
+Video Features Showcase-
+https://streamable.com/e/jeu2gx
 
 ### Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 ![image](https://user-images.githubusercontent.com/36753686/201904728-772a6473-6b14-4175-8437-612a9babe63b.png)
@@ -52,13 +51,13 @@ You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/
 
 Here is my setup
 
-![image](https://user-images.githubusercontent.com/36753686/199845675-70b3defd-4e18-410c-8ece-e5b1cafc785a.png)
-
-
+![image](https://user-images.githubusercontent.com/36753686/215336215-178e3a7d-a309-455a-b9d5-c4c92ae651aa.png)
+and using OVR Advanced Settings controller press -> key
+![image](https://user-images.githubusercontent.com/36753686/215336225-4302b7f1-71cf-4ba1-8f3f-13859d117e89.png)
 
 
 # Discord
-Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or add me Frosty704#4638
+Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or DM me Frosty704#4638
 
 
 
