@@ -5,15 +5,16 @@
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
 # About
 
-Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText)
-allowing you to have a speech bubble in your hand with the ability to drop it in the world, anchoring it there, resizing it, grabbing and moving it around with your right hand or just having it move with your head like a speech bubble!
+Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
+
+![Header Gif](https://user-images.githubusercontent.com/36753686/215548015-c31b936c-6808-4f33-89ae-ffe9a95e6cdc.gif)
 
 
-It uses 394 polygons, 3 material slots, (4 including the KAT) and 11 bits of parameter space.
+It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of parameter space.
 
 
 # TTS-Voice-Wizard
-This is best used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allowing speech to text (or text to text) outputting to the KAT! https://github.com/VRCWizard/TTS-Voice-Wizard 
+This is meant to be used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allowing speech to text (or text to text) outputting to the KAT! https://github.com/VRCWizard/TTS-Voice-Wizard 
 
 
 # Features & Showcase
@@ -25,17 +26,20 @@ Video Features Showcase-
 https://streamable.com/e/jeu2gx
 
 ### Someone have your shaders/custom animations hidden? A fallback message will show instead. 
-![image](https://user-images.githubusercontent.com/36753686/201904728-772a6473-6b14-4175-8437-612a9babe63b.png)
+
+![image](https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png)
+
+
 
 # Requirements 
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
-- PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 - [KillFrenzyAvatarText 1.2.7](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.2.7) 1.3.0+ has shader changes that makes it a bit wonky.
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
 - [Poiyomi 8.0](https://github.com/poiyomi/PoiyomiToonShader) 
-- 11 bits of parameter space (Billboard only), 3 if you opt out for manual resizing.
+- 12 bits of parameter space (Billboard only), 4 if you opt out for manual resizing.
 - Unity 2019.4.31f and basic knowledge of Unity.
-- This prefab was made with write defaults off, your avatar should too to avoid potential issues.
+- This prefab was made with write defaults off, your avatar should too to avoid potential issues. (or turn all write defaults on in the FX)
+- PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 
 
 # Video Installation
@@ -52,8 +56,11 @@ You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/
 Here is my setup
 
 ![image](https://user-images.githubusercontent.com/36753686/215336215-178e3a7d-a309-455a-b9d5-c4c92ae651aa.png)
+
 and using OVR Advanced Settings controller press -> key
+
 ![image](https://user-images.githubusercontent.com/36753686/215336225-4302b7f1-71cf-4ba1-8f3f-13859d117e89.png)
+
 
 
 # Discord
