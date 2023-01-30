@@ -19,11 +19,15 @@ MonoBehaviour:
     defaultValue: 0
   - name: KAT_World
     valueType: 2
-    saved: 1
+    saved: 0
     defaultValue: 0
   - name: KAT_EnableGrab
     valueType: 2
-    saved: 1
+    saved: 0
+    defaultValue: 0
+  - name: KAT_LocalGrab
+    valueType: 2
+    saved: 0
     defaultValue: 0
   - name: KAT_Resize
     valueType: 1
