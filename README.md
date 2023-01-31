@@ -13,9 +13,6 @@ Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://g
 It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of parameter space.
 
 
-# TTS-Voice-Wizard
-This is meant to be used in tandem with Wizard's TTS-Voice-Wizard,  
-
 # Speech Parsers
 - [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
  An OSC program allowing speech to text (or text to text) outputting to the KAT, making use of one of four speech recognition methods, Microsoft Azure, Vosk, Web Captioner, or System Speech.
