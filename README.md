@@ -14,8 +14,14 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
 
 
 # TTS-Voice-Wizard
-This is meant to be used in tandem with Wizard's TTS-Voice-Wizard, an OSC program allowing speech to text (or text to text) outputting to the KAT! https://github.com/VRCWizard/TTS-Voice-Wizard 
+This is meant to be used in tandem with Wizard's TTS-Voice-Wizard,  
 
+# Speech Parsers
+- [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
+ An OSC program allowing speech to text (or text to text) outputting to the KAT, making use of one of four speech recognition methods, Microsoft Azure, Vosk, Web Captioner, or System Speech.
+ 
+ - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
+ Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU and outputs to the KAT
 
 # Features & Showcase
 
