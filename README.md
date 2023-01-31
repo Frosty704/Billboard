@@ -1,4 +1,5 @@
-![newgithub](https://user-images.githubusercontent.com/36753686/215336131-2fde0b7c-8810-4cd3-a4fc-da05f9bb432d.png)
+![billboardheaderredux](https://user-images.githubusercontent.com/36753686/215833211-ef44eeca-59a9-4e64-818e-374e943da44d.png)
+
 
 [![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1/Frosty.Billboard.v3.1.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
@@ -28,10 +29,9 @@ https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 Video Features Showcase-
 https://streamable.com/e/jeu2gx
 
-### Someone have your shaders/custom animations hidden? A fallback message will show instead. 
+Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
 ![image](https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png)
-
 
 
 # Requirements 
@@ -54,7 +54,7 @@ https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-
 
 # Extra Functionality
 
-You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. TTS-Voice-Wizard's STTTS keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear and typing dots reappear once you STT again.
+You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. My STT keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear and typing dots reappear once you STT again.
 
 Here is my setup
 
@@ -69,6 +69,11 @@ and using OVR Advanced Settings controller press -> key
 # Discord
 Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or DM me Frosty704#4638
 
-
-
+# Credits
+- [KillFrenzyAvatarText](https://github.com/killfrenzy96/KillFrenzyAvatarText)
+- [TTSVoiceWizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
+- [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
+- [VRLabs World Constraint](https://github.com/VRLabs/World-Constraint)
+- [Nintendofan12s](https://www.fanpop.com/clubs/nintendofan12s-fun-stuff/images/37299069/title/windows-95-notepad-photo) for the Windows 95 Notepad image
+- [xxpillowprincessxx on Kofi](https://ko-fi.com/post/Windows-95-themed-border-for-webcamwindow-D1D83F6MR) for the Windows 95 window image
 
