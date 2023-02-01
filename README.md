@@ -50,20 +50,6 @@ A written step-by-step installation guide can be found at https://github.com/Fro
 https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-b148-f12b81fe04a5.mp4
 
 
-# Extra Functionality
-
-You can use [VRChat Hotkeys OSC](https://gitlab.com/ameliend/vrchat-hotkeys-osc/-/releases) to bind certain parameter actions to keyboard shortcuts. My STT keybind is CTRL+G, so I bound KAT_Visible = true and KAT_Pointer to 255 upon CTRL+G using this. This way the billboard appears when you start talking instead of waiting for any active text to appear and typing dots reappear once you STT again.
-
-Here is my setup
-
-![image](https://user-images.githubusercontent.com/36753686/215336215-178e3a7d-a309-455a-b9d5-c4c92ae651aa.png)
-
-and using OVR Advanced Settings controller press -> key
-
-![image](https://user-images.githubusercontent.com/36753686/215336225-4302b7f1-71cf-4ba1-8f3f-13859d117e89.png)
-
-
-
 # Discord
 Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or DM me Frosty704#4638
 
