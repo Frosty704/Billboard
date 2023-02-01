@@ -24,16 +24,13 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
 
 # Features & Showcase
 
-Picture Showcase-
-https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
+# [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
 
-Video Features Showcase-
-placeholder
+# [Video Demonstration](https://youtu.be/EEFF2Bty78A)
 
 Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
-![image](https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png)
-
+<img src="https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png" width="600">
 
 # Requirements 
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
