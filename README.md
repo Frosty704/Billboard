@@ -19,7 +19,8 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
  An OSC program allowing speech to text (or text to text) outputting to the KAT, making use of one of four speech recognition methods, Microsoft Azure, Vosk, Web Captioner, or System Speech.
  
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
- Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU and outputs to the KAT
+ Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the  KAT
+ In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
 
 # Features & Showcase
 
@@ -27,7 +28,7 @@ Picture Showcase-
 https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase
 
 Video Features Showcase-
-https://streamable.com/e/jeu2gx
+placeholder
 
 Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
