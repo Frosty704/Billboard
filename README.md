@@ -2,7 +2,7 @@
 
 
 [![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1/Frosty.Billboard.v3.1.unitypackage)
-[![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://streamable.com/e/jeu2gx) 
+[![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
 # About
 
@@ -17,16 +17,17 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
 # Speech Parsers
 - [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
  An OSC program allowing speech to text (or text to text) outputting to the KAT, making use of one of four speech recognition methods, Microsoft Azure, Vosk, Web Captioner, or System Speech.
+  - It also supports emotes replacing the original set of Japanese Hiragana, as seen in some screenshots
  
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
- Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the  KAT
- In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
+ Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT 
+   - In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
 
 # Features & Showcase
 
-# [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
+ - # [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
 
-# [Video Demonstration](https://youtu.be/EEFF2Bty78A)
+ - # [Video Demonstration](https://youtu.be/EEFF2Bty78A)
 
 Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
