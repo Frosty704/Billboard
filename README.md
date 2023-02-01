@@ -38,7 +38,6 @@ Someone have your shaders/custom animations hidden? A fallback message will show
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
 - [Poiyomi 8.0](https://github.com/poiyomi/PoiyomiToonShader) 
 - 12 bits of parameter space (Billboard only), 4 if you opt out for manual resizing.
-- Unity 2019.4.31f and basic knowledge of Unity.
 - This prefab was made with write defaults off, your avatar should too to avoid potential issues. (or turn all write defaults on in the FX)
 - PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 
