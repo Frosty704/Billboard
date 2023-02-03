@@ -28,6 +28,9 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
  - # [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
 
  - # [Video Demonstration](https://youtu.be/EEFF2Bty78A)
+ 
+ - # Customizability made easy!
+<img src="https://user-images.githubusercontent.com/36753686/216710639-160766ef-c096-4c22-9faf-93d7e5dc267c.gif" width="600">
 
 Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
