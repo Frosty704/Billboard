@@ -8,10 +8,9 @@
 
 Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
 
+It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
+
 ![Header Gif](https://user-images.githubusercontent.com/36753686/215548015-c31b936c-6808-4f33-89ae-ffe9a95e6cdc.gif)
-
-
-It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of parameter space.
 
 
 # Speech Parsers
@@ -20,7 +19,7 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
   - It also supports emotes replacing the original set of Japanese Hiragana, as seen in some screenshots
  
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
- Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT 
+ Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT (also supports text to text)
    - In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
 
 # Features & Showcase
@@ -28,13 +27,32 @@ It uses 500 polygons, 3 material slots, (4 including the KAT) and 12 bits of par
  - # [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
 
  - # [Video Demonstration](https://youtu.be/EEFF2Bty78A)
+
+- Speech to Text using [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
+<img src="https://user-images.githubusercontent.com/36753686/216971733-6301f273-8c52-4b9c-a8ff-d9d440a2e3d0.gif" width="640" height="360">
+
+- Hold it in your hand!
+<img src="https://user-images.githubusercontent.com/36753686/216971730-91ce1221-bc68-4af0-b51b-da25ce69a4ac.gif" width="640" height="360">
+
+- Resizing
+<img src="https://user-images.githubusercontent.com/36753686/216971720-44d1eed9-4c7f-467c-b0b8-2ba693de8cee.gif" width="640" height="360">
+
+- Drop it in the world and grab with a fist or thumbs up
+<img src="https://user-images.githubusercontent.com/36753686/216971712-3f53efe3-8692-4365-af1c-473c26e6f12c.gif" width="640" height="360">
+
+- Drop it anywhere and have it follow you
+<img src="https://user-images.githubusercontent.com/36753686/216971704-204f0a05-6ced-48b5-84be-612ec9d53a53.gif" width="640" height="360">
  
- - # Customizability made easy!
-<img src="https://user-images.githubusercontent.com/36753686/216710639-160766ef-c096-4c22-9faf-93d7e5dc267c.gif" width="600">
+ - Customizability made easy!
+<img src="https://user-images.githubusercontent.com/36753686/216710639-160766ef-c096-4c22-9faf-93d7e5dc267c.gif" width="640" height="360">
 
-Someone have your shaders/custom animations hidden? A fallback message will show instead. 
+ - Even AudioLink if you want!
 
-<img src="https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png" width="600">
+https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-8e37-fb3a487e5f71.mp4
+
+ - Someone have your shaders/custom animations hidden? A fallback message will show instead. 
+
+<img src="https://user-images.githubusercontent.com/36753686/215548765-3c273230-9181-45dd-bf76-51d7d3952314.png" width="640" height="360">
 
 # Requirements 
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
