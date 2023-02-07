@@ -3,7 +3,7 @@
 
 [![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1/Frosty.Billboard.v3.1.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
-[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://github.com/Frosty704/Billboard#video-installation) 
+[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
 # About
 
 Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
@@ -64,11 +64,7 @@ https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-
 - PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 
 
-# Video Installation
-
-A written step-by-step installation guide can be found at https://github.com/Frosty704/Billboard/wiki/2.-Install
-
-https://user-images.githubusercontent.com/36753686/198885603-8c43d992-00d9-498a-b148-f12b81fe04a5.mp4
+# [Video Installation](https://www.youtube.com/watch?v=c032JMb9ef0)
 
 
 # Discord
