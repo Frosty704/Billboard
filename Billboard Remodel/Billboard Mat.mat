@@ -18,7 +18,6 @@ Material:
   stringTagMap:
     OriginalShader: .poiyomi/Poiyomi 8.0/Poiyomi Outline
     RenderType: Opaque
-    _EnableOutlinesAnimated: 1
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -180,11 +179,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask:
-        m_Texture: {fileID: 2800000, guid: b7515b0c9db89a049bacbb24a616ae5b, type: 3}
+        m_Texture: {fileID: 2800000, guid: e7254f919e315ec47a99b0ae048f4cab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask1:
-        m_Texture: {fileID: 2800000, guid: 1a6a93311cea9104f8c822e4f308ec9f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 885ab13a4cdef1b4096379bad46cf6f6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask2:
@@ -324,7 +323,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineMask:
-        m_Texture: {fileID: 2800000, guid: cf7278ca41dbed946a73e453cd38d796, type: 3}
+        m_Texture: {fileID: 2800000, guid: e22fd656d6e10dc479cdc2187a8629be, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTexture:
@@ -1085,7 +1084,7 @@ Material:
     - _LightingAdditiveMonochromatic: 0
     - _LightingAdditivePassthrough: 0.5
     - _LightingAdditiveType: 1
-    - _LightingCap: 1
+    - _LightingCap: 0.75
     - _LightingCapEnabled: 1
     - _LightingCastedShadows: 0
     - _LightingColorMode: 0
@@ -1214,7 +1213,7 @@ Material:
     - _OutlineCull: 1
     - _OutlineDstBlend: 0
     - _OutlineEmission: 1
-    - _OutlineFixedSize: 1
+    - _OutlineFixedSize: 0
     - _OutlineHueOffset: 1
     - _OutlineHueOffsetSpeed: 4
     - _OutlineHueShift: 1
@@ -1611,16 +1610,16 @@ Material:
     - m_start_depthRimLightOptions: 0
     - m_start_dissolve: 0
     - m_start_dissolveHueShift: 0
-    - m_start_emission1Options: 1
+    - m_start_emission1Options: 0
     - m_start_emission2Options: 0
     - m_start_emission3Options: 0
-    - m_start_emissionOptions: 1
-    - m_start_emissions: 0
+    - m_start_emissionOptions: 0
+    - m_start_emissions: 1
     - m_start_flipBook: 0
     - m_start_glitter: 0
     - m_start_matcap: 0
     - m_start_mirrorOptions: 0
-    - m_start_outlineAdvanced: 1
+    - m_start_outlineAdvanced: 0
     - m_start_outlineBlending: 0
     - m_start_parallax: 0
     - m_start_pathing: 0

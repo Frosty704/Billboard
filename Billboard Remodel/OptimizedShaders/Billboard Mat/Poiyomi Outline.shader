@@ -1969,7 +1969,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_LIGHTINGFORCEDCOLORTHEMEINDEX 0
 #define PROP_UNLIT_INTENSITY 1
 #define PROP_LIGHTINGCAPENABLED 1
-#define PROP_LIGHTINGCAP 1
+#define PROP_LIGHTINGCAP 0.75
 #define PROP_LIGHTINGMINLIGHTBRIGHTNESS 0
 #define PROP_LIGHTINGINDIRECTUSESNORMALS 0
 #define PROP_LIGHTINGCASTEDSHADOWS 0
@@ -2255,7 +2255,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINESPACE 0
 #define PROP_OUTLINETINTMIX 0
 #define PROP_OUTLINERIMLIGHTBLEND 0
-#define PROP_OUTLINEFIXEDSIZE 1
+#define PROP_OUTLINEFIXEDSIZE 0
 #define PROP_OUTLINESMAXDISTANCE 9999
 #define PROP_OUTLINEUSEVERTEXCOLORS 0
 #define PROP_OUTLINELIT 1
@@ -2270,7 +2270,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINEHUESHIFT 1
 #define PROP_OUTLINEHUEOFFSET 1
 #define PROP_OUTLINEHUEOFFSETSPEED 4
-#define PROPM_START_OUTLINEADVANCED 1
+#define PROPM_START_OUTLINEADVANCED 0
 #define PROP_OUTLINECLIPATZEROWIDTH 0
 #define PROP_OUTLINEOVERRIDEALPHA 0
 #define PROP_OFFSET_Z 0
@@ -2366,8 +2366,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_FLIPBOOKCHRONOTENSITYSPEED 0
 #define PROPM_END_FLIPBOOKAUDIOLINK 0
 #define PROPM_END_FLIPBOOK 0
-#define PROPM_START_EMISSIONS 0
-#define PROPM_START_EMISSIONOPTIONS 1
+#define PROPM_START_EMISSIONS 1
+#define PROPM_START_EMISSIONOPTIONS 0
 #define PROP_ENABLEEMISSION 1
 #define PROP_EMISSIONREPLACE0 0
 #define PROP_EMISSIONCOLORTHEMEINDEX 0
@@ -2405,7 +2405,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_AUDIOLINKEMISSION0CENTEROUTSIZE 0
 #define PROP_AUDIOLINKEMISSION0CENTEROUTBAND 0
 #define PROPM_END_EMISSIONOPTIONS 0
-#define PROPM_START_EMISSION1OPTIONS 1
+#define PROPM_START_EMISSION1OPTIONS 0
 #define PROP_ENABLEEMISSION1 1
 #define PROP_EMISSIONREPLACE1 0
 #define PROP_EMISSIONCOLOR1THEMEINDEX 0
@@ -2554,6 +2554,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_PATHGRADIENTTYPE 0
 #define PROP_PATHINGOVERRIDEALPHA 0
 #define PROP_PATHINGMAPUV 0
+#define PROP_PATHINGCOLORMAP
 #define PROP_PATHINGCOLORMAPUV 0
 #define PROP_PATHTYPER 0
 #define PROP_PATHTYPEG 0
@@ -4407,11 +4408,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				}
 				half offsetMultiplier = 1;
 				half distanceOffset = 1;
-				if (float(1))
+				if (float(0))
 				{
 					distanceOffset *= min(distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz), float(9999));
 				}
-				float3 offset = outlineNormal * (float(0.75) * _EnableOutlines / 100) * outlineMask * distanceOffset;
+				float3 offset = outlineNormal * (float(0.75) * float(1) / 100) * outlineMask * distanceOffset;
 				if (float(0) == 2)
 				{
 					float3 lightDirection = normalize(_WorldSpaceLightPos0 + unity_SHAr.xyz + unity_SHAg.xyz + unity_SHAb.xyz);
@@ -5117,7 +5118,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				float3 finalWrap = directColor + indirectColor;
 				if (float(1))
 				{
-					finalWrap = clamp(finalWrap, float(0), float(1));
+					finalWrap = clamp(finalWrap, float(0), float(0.75));
 				}
 				else
 				{
@@ -5795,8 +5796,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), float(0));
 				if (float(1))
 				{
-					poiLight.directColor = min(poiLight.directColor, float(1));
-					poiLight.indirectColor = min(poiLight.indirectColor, float(1));
+					poiLight.directColor = min(poiLight.directColor, float(0.75));
+					poiLight.indirectColor = min(poiLight.indirectColor, float(0.75));
 				}
 				if (float(0))
 				{
@@ -6268,7 +6269,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_LIGHTINGFORCEDCOLORTHEMEINDEX 0
 #define PROP_UNLIT_INTENSITY 1
 #define PROP_LIGHTINGCAPENABLED 1
-#define PROP_LIGHTINGCAP 1
+#define PROP_LIGHTINGCAP 0.75
 #define PROP_LIGHTINGMINLIGHTBRIGHTNESS 0
 #define PROP_LIGHTINGINDIRECTUSESNORMALS 0
 #define PROP_LIGHTINGCASTEDSHADOWS 0
@@ -6554,7 +6555,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINESPACE 0
 #define PROP_OUTLINETINTMIX 0
 #define PROP_OUTLINERIMLIGHTBLEND 0
-#define PROP_OUTLINEFIXEDSIZE 1
+#define PROP_OUTLINEFIXEDSIZE 0
 #define PROP_OUTLINESMAXDISTANCE 9999
 #define PROP_OUTLINEUSEVERTEXCOLORS 0
 #define PROP_OUTLINELIT 1
@@ -6569,7 +6570,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINEHUESHIFT 1
 #define PROP_OUTLINEHUEOFFSET 1
 #define PROP_OUTLINEHUEOFFSETSPEED 4
-#define PROPM_START_OUTLINEADVANCED 1
+#define PROPM_START_OUTLINEADVANCED 0
 #define PROP_OUTLINECLIPATZEROWIDTH 0
 #define PROP_OUTLINEOVERRIDEALPHA 0
 #define PROP_OFFSET_Z 0
@@ -6665,8 +6666,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_FLIPBOOKCHRONOTENSITYSPEED 0
 #define PROPM_END_FLIPBOOKAUDIOLINK 0
 #define PROPM_END_FLIPBOOK 0
-#define PROPM_START_EMISSIONS 0
-#define PROPM_START_EMISSIONOPTIONS 1
+#define PROPM_START_EMISSIONS 1
+#define PROPM_START_EMISSIONOPTIONS 0
 #define PROP_ENABLEEMISSION 1
 #define PROP_EMISSIONREPLACE0 0
 #define PROP_EMISSIONCOLORTHEMEINDEX 0
@@ -6704,7 +6705,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_AUDIOLINKEMISSION0CENTEROUTSIZE 0
 #define PROP_AUDIOLINKEMISSION0CENTEROUTBAND 0
 #define PROPM_END_EMISSIONOPTIONS 0
-#define PROPM_START_EMISSION1OPTIONS 1
+#define PROPM_START_EMISSION1OPTIONS 0
 #define PROP_ENABLEEMISSION1 1
 #define PROP_EMISSIONREPLACE1 0
 #define PROP_EMISSIONCOLOR1THEMEINDEX 0
@@ -6853,6 +6854,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_PATHGRADIENTTYPE 0
 #define PROP_PATHINGOVERRIDEALPHA 0
 #define PROP_PATHINGMAPUV 0
+#define PROP_PATHINGCOLORMAP
 #define PROP_PATHINGCOLORMAPUV 0
 #define PROP_PATHTYPER 0
 #define PROP_PATHTYPEG 0
@@ -8585,11 +8587,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				}
 				half offsetMultiplier = 1;
 				half distanceOffset = 1;
-				if (float(1))
+				if (float(0))
 				{
 					distanceOffset *= min(distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz), float(9999));
 				}
-				float3 offset = outlineNormal * (float(0.75) * _EnableOutlines / 100) * outlineMask * distanceOffset;
+				float3 offset = outlineNormal * (float(0.75) * float(1) / 100) * outlineMask * distanceOffset;
 				if (float(0) == 2)
 				{
 					float3 lightDirection = normalize(_WorldSpaceLightPos0 + unity_SHAr.xyz + unity_SHAg.xyz + unity_SHAb.xyz);
@@ -8784,7 +8786,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 			#ifdef POI_PASS_OUTLINE
 			void applyOutlineColor(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
 			{
-				clip(_EnableOutlines - 0.01);
+				clip(float(1) - 0.01);
 				float OutlineMask = tex2D(_OutlineMask, TRANSFORM_TEX(poiMesh.uv[float(0)], _OutlineMask) + _Time.x * float4(0,0,0,0)).r;
 				if (float(0))
 				{
@@ -9267,7 +9269,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				float3 finalWrap = directColor + indirectColor;
 				if (float(1))
 				{
-					finalWrap = clamp(finalWrap, float(0), float(1));
+					finalWrap = clamp(finalWrap, float(0), float(0.75));
 				}
 				else
 				{
@@ -9633,8 +9635,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), float(0));
 				if (float(1))
 				{
-					poiLight.directColor = min(poiLight.directColor, float(1));
-					poiLight.indirectColor = min(poiLight.indirectColor, float(1));
+					poiLight.directColor = min(poiLight.directColor, float(0.75));
+					poiLight.indirectColor = min(poiLight.indirectColor, float(0.75));
 				}
 				if (float(0))
 				{
@@ -10080,7 +10082,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_LIGHTINGFORCEDCOLORTHEMEINDEX 0
 #define PROP_UNLIT_INTENSITY 1
 #define PROP_LIGHTINGCAPENABLED 1
-#define PROP_LIGHTINGCAP 1
+#define PROP_LIGHTINGCAP 0.75
 #define PROP_LIGHTINGMINLIGHTBRIGHTNESS 0
 #define PROP_LIGHTINGINDIRECTUSESNORMALS 0
 #define PROP_LIGHTINGCASTEDSHADOWS 0
@@ -10366,7 +10368,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINESPACE 0
 #define PROP_OUTLINETINTMIX 0
 #define PROP_OUTLINERIMLIGHTBLEND 0
-#define PROP_OUTLINEFIXEDSIZE 1
+#define PROP_OUTLINEFIXEDSIZE 0
 #define PROP_OUTLINESMAXDISTANCE 9999
 #define PROP_OUTLINEUSEVERTEXCOLORS 0
 #define PROP_OUTLINELIT 1
@@ -10381,7 +10383,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINEHUESHIFT 1
 #define PROP_OUTLINEHUEOFFSET 1
 #define PROP_OUTLINEHUEOFFSETSPEED 4
-#define PROPM_START_OUTLINEADVANCED 1
+#define PROPM_START_OUTLINEADVANCED 0
 #define PROP_OUTLINECLIPATZEROWIDTH 0
 #define PROP_OUTLINEOVERRIDEALPHA 0
 #define PROP_OFFSET_Z 0
@@ -10477,8 +10479,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_FLIPBOOKCHRONOTENSITYSPEED 0
 #define PROPM_END_FLIPBOOKAUDIOLINK 0
 #define PROPM_END_FLIPBOOK 0
-#define PROPM_START_EMISSIONS 0
-#define PROPM_START_EMISSIONOPTIONS 1
+#define PROPM_START_EMISSIONS 1
+#define PROPM_START_EMISSIONOPTIONS 0
 #define PROP_ENABLEEMISSION 1
 #define PROP_EMISSIONREPLACE0 0
 #define PROP_EMISSIONCOLORTHEMEINDEX 0
@@ -10516,7 +10518,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_AUDIOLINKEMISSION0CENTEROUTSIZE 0
 #define PROP_AUDIOLINKEMISSION0CENTEROUTBAND 0
 #define PROPM_END_EMISSIONOPTIONS 0
-#define PROPM_START_EMISSION1OPTIONS 1
+#define PROPM_START_EMISSION1OPTIONS 0
 #define PROP_ENABLEEMISSION1 1
 #define PROP_EMISSIONREPLACE1 0
 #define PROP_EMISSIONCOLOR1THEMEINDEX 0
@@ -10665,6 +10667,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_PATHGRADIENTTYPE 0
 #define PROP_PATHINGOVERRIDEALPHA 0
 #define PROP_PATHINGMAPUV 0
+#define PROP_PATHINGCOLORMAP
 #define PROP_PATHINGCOLORMAPUV 0
 #define PROP_PATHTYPER 0
 #define PROP_PATHTYPEG 0
@@ -12404,11 +12407,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				}
 				half offsetMultiplier = 1;
 				half distanceOffset = 1;
-				if (float(1))
+				if (float(0))
 				{
 					distanceOffset *= min(distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz), float(9999));
 				}
-				float3 offset = outlineNormal * (float(0.75) * _EnableOutlines / 100) * outlineMask * distanceOffset;
+				float3 offset = outlineNormal * (float(0.75) * float(1) / 100) * outlineMask * distanceOffset;
 				if (float(0) == 2)
 				{
 					float3 lightDirection = normalize(_WorldSpaceLightPos0 + unity_SHAr.xyz + unity_SHAg.xyz + unity_SHAb.xyz);
@@ -13114,7 +13117,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				float3 finalWrap = directColor + indirectColor;
 				if (float(1))
 				{
-					finalWrap = clamp(finalWrap, float(0), float(1));
+					finalWrap = clamp(finalWrap, float(0), float(0.75));
 				}
 				else
 				{
@@ -13621,8 +13624,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				poiLight.indirectColor = lerp(poiLight.indirectColor, dot(poiLight.indirectColor, float3(0.299, 0.587, 0.114)), float(0));
 				if (float(1))
 				{
-					poiLight.directColor = min(poiLight.directColor, float(1));
-					poiLight.indirectColor = min(poiLight.indirectColor, float(1));
+					poiLight.directColor = min(poiLight.directColor, float(0.75));
+					poiLight.indirectColor = min(poiLight.indirectColor, float(0.75));
 				}
 				if (float(0))
 				{
@@ -14085,7 +14088,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_LIGHTINGFORCEDCOLORTHEMEINDEX 0
 #define PROP_UNLIT_INTENSITY 1
 #define PROP_LIGHTINGCAPENABLED 1
-#define PROP_LIGHTINGCAP 1
+#define PROP_LIGHTINGCAP 0.75
 #define PROP_LIGHTINGMINLIGHTBRIGHTNESS 0
 #define PROP_LIGHTINGINDIRECTUSESNORMALS 0
 #define PROP_LIGHTINGCASTEDSHADOWS 0
@@ -14371,7 +14374,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINESPACE 0
 #define PROP_OUTLINETINTMIX 0
 #define PROP_OUTLINERIMLIGHTBLEND 0
-#define PROP_OUTLINEFIXEDSIZE 1
+#define PROP_OUTLINEFIXEDSIZE 0
 #define PROP_OUTLINESMAXDISTANCE 9999
 #define PROP_OUTLINEUSEVERTEXCOLORS 0
 #define PROP_OUTLINELIT 1
@@ -14386,7 +14389,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_OUTLINEHUESHIFT 1
 #define PROP_OUTLINEHUEOFFSET 1
 #define PROP_OUTLINEHUEOFFSETSPEED 4
-#define PROPM_START_OUTLINEADVANCED 1
+#define PROPM_START_OUTLINEADVANCED 0
 #define PROP_OUTLINECLIPATZEROWIDTH 0
 #define PROP_OUTLINEOVERRIDEALPHA 0
 #define PROP_OFFSET_Z 0
@@ -14482,8 +14485,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_FLIPBOOKCHRONOTENSITYSPEED 0
 #define PROPM_END_FLIPBOOKAUDIOLINK 0
 #define PROPM_END_FLIPBOOK 0
-#define PROPM_START_EMISSIONS 0
-#define PROPM_START_EMISSIONOPTIONS 1
+#define PROPM_START_EMISSIONS 1
+#define PROPM_START_EMISSIONOPTIONS 0
 #define PROP_ENABLEEMISSION 1
 #define PROP_EMISSIONREPLACE0 0
 #define PROP_EMISSIONCOLORTHEMEINDEX 0
@@ -14521,7 +14524,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_AUDIOLINKEMISSION0CENTEROUTSIZE 0
 #define PROP_AUDIOLINKEMISSION0CENTEROUTBAND 0
 #define PROPM_END_EMISSIONOPTIONS 0
-#define PROPM_START_EMISSION1OPTIONS 1
+#define PROPM_START_EMISSION1OPTIONS 0
 #define PROP_ENABLEEMISSION1 1
 #define PROP_EMISSIONREPLACE1 0
 #define PROP_EMISSIONCOLOR1THEMEINDEX 0
@@ -14670,6 +14673,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 #define PROP_PATHGRADIENTTYPE 0
 #define PROP_PATHINGOVERRIDEALPHA 0
 #define PROP_PATHINGMAPUV 0
+#define PROP_PATHINGCOLORMAP
 #define PROP_PATHINGCOLORMAPUV 0
 #define PROP_PATHTYPER 0
 #define PROP_PATHTYPEG 0
@@ -16232,11 +16236,11 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.0/Poiyomi Outline/8816bf3639f5661449d84
 				}
 				half offsetMultiplier = 1;
 				half distanceOffset = 1;
-				if (float(1))
+				if (float(0))
 				{
 					distanceOffset *= min(distance(_WorldSpaceCameraPos, mul(unity_ObjectToWorld, o.localPos).xyz), float(9999));
 				}
-				float3 offset = outlineNormal * (float(0.75) * _EnableOutlines / 100) * outlineMask * distanceOffset;
+				float3 offset = outlineNormal * (float(0.75) * float(1) / 100) * outlineMask * distanceOffset;
 				if (float(0) == 2)
 				{
 					float3 lightDirection = normalize(_WorldSpaceLightPos0 + unity_SHAr.xyz + unity_SHAg.xyz + unity_SHAb.xyz);
