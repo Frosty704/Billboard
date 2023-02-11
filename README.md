@@ -1,10 +1,11 @@
+# About
 ![billboardheaderredux](https://user-images.githubusercontent.com/36753686/215833211-ef44eeca-59a9-4e64-818e-374e943da44d.png)
 
 
 [![Download](https://img.shields.io/badge/-DOWNLOAD-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.1/Frosty.Billboard.v3.1.1.unitypackage)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
-# About
+
 
 Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
 
