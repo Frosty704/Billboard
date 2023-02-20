@@ -22,7 +22,7 @@ It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
  Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT.
    - In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
-   - Supports emotes replacing the original set of Japanese Hiragana and text to text.
+   - Supports emotes and text to text.
    - Intuitive SteamVR binding system, press to transcribe, hold to clear
 
 # Features & Showcase
