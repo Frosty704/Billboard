@@ -16,12 +16,14 @@ It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
 
 # Speech Parsers
 - [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
- An OSC program allowing speech to text (or text to text) outputting to the KAT, making use of one of four speech recognition methods, Microsoft Azure, Vosk, Web Captioner, or System Speech.
+ An OSC program allowing speech to text, speech to text to speech, and text to text outputting to the KAT, making use of one of five speech recognition methods, Microsoft Azure, OpenAI's Whisper, Vosk, Web Captioner, or System Speech.
   - It also supports emotes replacing the original set of Japanese Hiragana, as seen in some screenshots
  
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
- Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT (also supports text to text)
+ Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT.
    - In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
+   - Supports emotes replacing the original set of Japanese Hiragana and text to text.
+   - Intuitive SteamVR binding system, press to transcribe, hold to clear
 
 # Features & Showcase
 
