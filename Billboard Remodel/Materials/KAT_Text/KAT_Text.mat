@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: KAT_Text
   m_Shader: {fileID: 4800000, guid: 30a005c1870387fd5b12700d8d599194, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _COLORSDISABLED_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -194,6 +194,7 @@ Material:
     - _Char97: 0
     - _Char98: 0
     - _Char99: 0
+    - _ColorsDisabled: 1
     - _Culling: 0
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -201,6 +202,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _GrowEnabled: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
