@@ -59,7 +59,7 @@ https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-
 
 # Requirements 
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
-- [KillFrenzyAvatarText 1.2.7](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.2.7) 1.3.0+ has shader changes that makes it a bit wonky.
+- [KillFrenzyAvatarText 1.3.2](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.3.2)
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
 - [Poiyomi 8.0](https://github.com/poiyomi/PoiyomiToonShader) 
 - 12 bits of parameter space (Billboard only), 4 if you opt out for manual resizing.
