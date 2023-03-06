@@ -31,8 +31,12 @@ It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
 
  - # [Video Demonstration](https://youtu.be/EEFF2Bty78A)
 
-- Speech to Text using [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
-<img src="https://user-images.githubusercontent.com/36753686/216971733-6301f273-8c52-4b9c-a8ff-d9d440a2e3d0.gif" width="640" height="360">
+- Speech to Text & emotes using [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
+
+![1_stt](https://user-images.githubusercontent.com/36753686/223066845-2eddf954-c953-4dd4-816c-e0fbb5684ec0.gif)
+
+![2_stt](https://user-images.githubusercontent.com/36753686/223067897-111e4702-c458-494a-ae79-f67520f074a5.gif)
+
 
 - Hold it in your hand!
 <img src="https://user-images.githubusercontent.com/36753686/216971730-91ce1221-bc68-4af0-b51b-da25ce69a4ac.gif" width="640" height="360">
