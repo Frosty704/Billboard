@@ -11,7 +11,7 @@ Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://g
 
 It uses 500 polygons, 4 material slots, 12 bits of parameter space, and 6 constraints.
 
-Required parameter space for the text system will depend on how fast you want the text to render, read more [Here](https://github.com/killfrenzy96/KillFrenzyAvatarText#installation-simple)
+Required parameter space for the text system will depend on how fast you want the text to render, read more [Here](https://github.com/killfrenzy96/KillFrenzyAvatarText#prerequisites)
 
 ![Header Gif](https://user-images.githubusercontent.com/36753686/215548015-c31b936c-6808-4f33-89ae-ffe9a95e6cdc.gif)
 
