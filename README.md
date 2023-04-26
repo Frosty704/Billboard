@@ -9,7 +9,9 @@
 
 Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
 
-It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
+It uses 500 polygons, 4 material slots, 12 bits of parameter space, and 6 constraints.
+
+Required parameter space for the text system will depend on how fast you want the text to render, read more [Here](https://github.com/killfrenzy96/KillFrenzyAvatarText#installation-simple)
 
 ![Header Gif](https://user-images.githubusercontent.com/36753686/215548015-c31b936c-6808-4f33-89ae-ffe9a95e6cdc.gif)
 
@@ -18,6 +20,7 @@ It uses 500 polygons, 4 material slots, and 12 bits of parameter space.
 - [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
  An OSC program allowing speech to text, speech to text to speech, and text to text outputting to the KAT, making use of one of five speech recognition methods, Microsoft Azure, OpenAI's Whisper, Vosk, Web Captioner, or System Speech.
   - It also supports emotes replacing the original set of Japanese Hiragana, as seen in some screenshots
+  - Many more cool & quality of life features
  
  - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
  Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT.
@@ -75,7 +78,23 @@ https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-
 
 
 # Discord
-Need help? Questions? Comments? You can find me on the TTS Voice Wizard [Discord](https://discord.gg/8ttJKtQaMc) or DM me Frosty704#4638
+Need help? Questions? Comments? You can find me at:
+
+TTS Voice Wizard [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord](https://discord.gg/8ttJKtQaMc)
+
+I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord](https://discord.gg/rqcWHje3hn) 
+
+and or DM me Frosty704#4638
+
+
+# Working on
+
+- Left hand support & redo animator setup to fix desync
+- Redo UV mapping of og board and Windows 95 theme
+- Text render directly onto board model instead of black/white background texture sheet
+  - This way you can also have anything behind the text, such as gifs
+- Windows 11 Theme
+
 
 # Credits
 - [KillFrenzyAvatarText](https://github.com/killfrenzy96/KillFrenzyAvatarText)
