@@ -88,14 +88,6 @@ and or DM me Frosty704#4638
 
 Feel free to join the [group!](https://vrc.group/FROSTY.8688) would love to meet anyone using my prefab
 
-# Working on
-
-- Left hand support & redo animator setup to fix desync
-- Redo UV mapping of og board and Windows 95 theme
-- Text render directly onto board model instead of black/white background texture sheet
-  - This way you can also have anything behind the text, such as gifs
-- Windows 11 Theme
-
 
 # Credits
 - [KillFrenzyAvatarText](https://github.com/killfrenzy96/KillFrenzyAvatarText)
