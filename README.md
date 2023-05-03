@@ -86,6 +86,7 @@ I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef
 
 and or DM me Frosty704#4638
 
+Feel free to join the [group!](https://vrc.group/FROSTY.8688) would love to meet anyone using my prefab
 
 # Working on
 
