@@ -1,5 +1,5 @@
 # About
-![billboardheaderredux](https://user-images.githubusercontent.com/36753686/215833211-ef44eeca-59a9-4e64-818e-374e943da44d.png)
+![billboardheaderredux2](https://user-images.githubusercontent.com/36753686/235922298-06560e71-f736-4e84-9e72-04796e7ba5fd.png)
 
 
 [![Download](https://img.shields.io/badge/DOWNLOAD-3.1.2-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.2/Frosty.Billboard.v3.1.2.unitypackage)
