@@ -1,0 +1,1 @@
+Flipbooks are generally not performant because of the nature of how they work, please check the size of the texture array before deciding to use it!
