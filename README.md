@@ -3,6 +3,7 @@
 
 
 [![Download](https://img.shields.io/badge/DOWNLOAD-3.1.2-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.2/Frosty.Billboard.v3.1.2.unitypackage)
+[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4(MAY%20BE%20BUGGY)-orange)](https://github.com/Frosty704/Billboard/releases/tag/main-v4)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
 
