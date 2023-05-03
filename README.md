@@ -68,7 +68,7 @@ https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-
 - **IMPORT THESE BEFORE IMPORTING MY PACKAGE**
 - [KillFrenzyAvatarText 1.3.2](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.3.2)
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
-- [Poiyomi 8.0](https://github.com/poiyomi/PoiyomiToonShader) 
+- [Poiyomi 8.1](https://github.com/poiyomi/PoiyomiToonShader/releases) Specific version used is 8.1.163
 - 12 bits of parameter space (Billboard only), 4 if you opt out for manual resizing.
 - This prefab was made with write defaults off, your avatar should too to avoid potential issues. (or turn all write defaults on in the FX)
 - PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
