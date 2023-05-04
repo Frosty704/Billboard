@@ -3,6 +3,7 @@
 
 
 [![Download](https://img.shields.io/badge/DOWNLOAD-3.1.2-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.2/Frosty.Billboard.v3.1.2.unitypackage)
+[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4(MAY%20BE%20BUGGY)-orange)](https://github.com/Frosty704/Billboard/releases/tag/main-v4)
 [![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
 
@@ -87,14 +88,6 @@ I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef
 and or DM me Frosty704#4638
 
 Feel free to join the [group!](https://vrc.group/FROSTY.8688) would love to meet anyone using my prefab
-
-# Working on
-
-- Left hand support & redo animator setup to fix desync
-- Redo UV mapping of og board and Windows 95 theme
-- Text render directly onto board model instead of black/white background texture sheet
-  - This way you can also have anything behind the text, such as gifs
-- Windows 11 Theme
 
 
 # Credits
