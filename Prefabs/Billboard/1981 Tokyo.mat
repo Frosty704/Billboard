@@ -7,18 +7,18 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: OG Board
-  m_Shader: {fileID: 4800000, guid: 66e3fde52f3e5664baa03b8bbf89f6b4, type: 3}
+  m_Name: 1981 Tokyo
+  m_Shader: {fileID: 4800000, guid: fec60f2631edfa34ba621f9693a2c8e9, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2000
   stringTagMap:
-    AllLockedGUIDS: 4c9fd58384d15c048b5aa0d93a8e648c
+    AllLockedGUIDS: 6eb9eff7551ba3e41846517379bee022
     OriginalKeywords: POI_EMISSION_1 POI_LIGHT_DATA_ADDITIVE_DIRECTIONAL_ENABLE POI_LIGHT_DATA_ADDITIVE_ENABLE
       POI_VERTEXLIGHT_ON VIGNETTE_MASKED _EMISSION _LIGHTINGMODE_FLAT _RIM2STYLE_POIYOMI
-      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ
+      _RIMSTYLE_POIYOMI _STOCHASTICMODE_DELIOT_HEITZ _SUNDISK_HIGH_QUALITY
     OriginalShader: .poiyomi/Poiyomi 8.1/Poiyomi Toon Outline
     RenderType: Opaque
   disabledShaderPasses: []
@@ -190,11 +190,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask:
-        m_Texture: {fileID: 2800000, guid: 9da4d33da9e0c0f4cb3e77ce7a93f91c, type: 3}
+        m_Texture: {fileID: 2800000, guid: c113b50b90e0e4b4cbf0c56b59a1093a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask1:
-        m_Texture: {fileID: 2800000, guid: c113b50b90e0e4b4cbf0c56b59a1093a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 25d1d0d22fac83c4492886068357263c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMask2:
@@ -210,7 +210,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionScrollingCurve1:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 084209596da722941ab586fe1d73f603, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionScrollingCurve2:
@@ -222,11 +222,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlipbookMask:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 1717049066cdd0849a54974cc6e4bb63, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlipbookTexArray:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 18700000, guid: 9c23529826a9fda488901624e0c5d287, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GlitterColorMap:
@@ -382,7 +382,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTexture:
-        m_Texture: {fileID: 2800000, guid: 90d4e72c4ac4c10438715af32083c41b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PPMask:
@@ -1133,7 +1133,7 @@ Material:
     - _EmissionHueShiftEnabled1: 0
     - _EmissionHueShiftEnabled2: 0
     - _EmissionHueShiftEnabled3: 0
-    - _EmissionHueShiftSpeed: 0
+    - _EmissionHueShiftSpeed: 2
     - _EmissionHueShiftSpeed1: 0
     - _EmissionHueShiftSpeed2: 0
     - _EmissionHueShiftSpeed3: 0
@@ -1170,7 +1170,7 @@ Material:
     - _EmissionScrollingOffset2: 0
     - _EmissionScrollingOffset3: 0
     - _EmissionScrollingUseCurve: 0
-    - _EmissionScrollingUseCurve1: 0
+    - _EmissionScrollingUseCurve1: 1
     - _EmissionScrollingUseCurve2: 0
     - _EmissionScrollingUseCurve3: 0
     - _EmissionScrollingVertexColor: 0
@@ -1219,7 +1219,7 @@ Material:
     - _EnableEmission2: 0
     - _EnableEmission3: 0
     - _EnableEnvironmentalRim: 0
-    - _EnableFlipbook: 0
+    - _EnableFlipbook: 1
     - _EnableGITDEmission: 0
     - _EnableGITDEmission1: 0
     - _EnableGITDEmission2: 0
@@ -2198,7 +2198,7 @@ Material:
     - _SSSThicknessMod: 0
     - _Saturation: 0
     - _ScrollingEmission: 0
-    - _ScrollingEmission1: 0
+    - _ScrollingEmission1: 1
     - _ScrollingEmission2: 0
     - _ScrollingEmission3: 0
     - _Set_HighColorMaskChannel: 1
@@ -2923,7 +2923,7 @@ Material:
     - _EmissionAL3Multipliers: {r: 1, g: 1, b: 0, a: 0}
     - _EmissionAL3StrengthMod: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissionColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor1: {r: 0.2148001, g: 0, b: 0.4339623, a: 1}
     - _EmissionColor2: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor3: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionMap1Pan: {r: 0, g: 0, b: 0, a: 0}
@@ -2935,7 +2935,7 @@ Material:
     - _EmissionMask3Pan: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _EmissiveScroll_Direction: {r: 0, g: -10, b: 0, a: 0}
-    - _EmissiveScroll_Direction1: {r: 0, g: -10, b: 0, a: 0}
+    - _EmissiveScroll_Direction1: {r: -7.17, g: -10, b: 0, a: 0}
     - _EmissiveScroll_Direction2: {r: 0, g: -10, b: 0, a: 0}
     - _EmissiveScroll_Direction3: {r: 0, g: -10, b: 0, a: 0}
     - _FXProximityColorMaxColor: {r: 1, g: 1, b: 1, a: 1}
@@ -3020,7 +3020,7 @@ Material:
     - _LightingShadowColor: {r: 1, g: 1, b: 1, a: 1}
     - _LightingShadowMasksPan: {r: 0, g: 0, b: 0, a: 0}
     - _LightngForcedDirection: {r: 0, g: 0, b: 0, a: 1}
-    - _LineColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LineColor: {r: 0.4950776, g: 0, b: 1, a: 1}
     - _MainColorAdjustTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _MainTexPan: {r: 0, g: 0, b: 0, a: 0}
     - _MatCap2ndBlendUV1: {r: 0, g: 0, b: 0, a: 0}
