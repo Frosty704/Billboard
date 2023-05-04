@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls:
   - name: Hand Attach
-    icon: {fileID: 2800000, guid: a3a9a9883a6ccc647a4126bde102e3ad, type: 3}
+    icon: {fileID: 2800000, guid: f8d723ab710d0a14ba5ad853b75acadf, type: 3}
     type: 102
     parameter:
-      name: KAT_Hand
+      name: Billboard/Hand
     value: 1
     style: 0
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
   - name: Billboard Visible
-    icon: {fileID: 2800000, guid: dd77369a09d14a940ab8866d340d6c41, type: 3}
+    icon: {fileID: 2800000, guid: ec5b248204fcb0845a7547e9d443c34e, type: 3}
     type: 102
     parameter:
       name: KAT_Visible
@@ -34,7 +34,7 @@ MonoBehaviour:
     subParameters: []
     labels: []
   - name: Resize Text - default 30%
-    icon: {fileID: 2800000, guid: 750f16106c88caa4195735899e87281b, type: 3}
+    icon: {fileID: 2800000, guid: b0a2695cd22033c47976e0abd9bc5077, type: 3}
     type: 203
     parameter:
       name: 
@@ -42,10 +42,10 @@ MonoBehaviour:
     style: 0
     subMenu: {fileID: 0}
     subParameters:
-    - name: KAT_Resize
+    - name: Billboard/Resize
     labels: []
   - name: Clear Text
-    icon: {fileID: 2800000, guid: 02da8bc09eea1bd49ad9eb637034c106, type: 3}
+    icon: {fileID: 2800000, guid: 20dd995fec6fec2408339b64aa77b77a, type: 3}
     type: 101
     parameter:
       name: KAT_Pointer
@@ -55,20 +55,20 @@ MonoBehaviour:
     subParameters: []
     labels: []
   - name: Enable Grabbing
-    icon: {fileID: 2800000, guid: 140f62b8bbe888f40adf3b914f7b4859, type: 3}
+    icon: {fileID: 2800000, guid: a5ba33f062fb75147a383650c63eaa47, type: 3}
     type: 102
     parameter:
-      name: KAT_EnableGrab
+      name: Billboard/EnableGrab
     value: 1
     style: 0
     subMenu: {fileID: 0}
     subParameters: []
     labels: []
   - name: Local Drop
-    icon: {fileID: 2800000, guid: 19ca9f798149aa442a97044bd7855fbd, type: 3}
+    icon: {fileID: 2800000, guid: 8e2d552cbfe815f4eb5cdad23645c898, type: 3}
     type: 102
     parameter:
-      name: KAT_LocalGrab
+      name: Billboard/LocalGrab
     value: 1
     style: 0
     subMenu: {fileID: 0}
