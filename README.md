@@ -17,9 +17,9 @@ It uses:
 
 Required parameter space for the KAT text system will depend on how fast you want the text to render,
 - At the least,  you ideally want 4, for most users 8, and 16 if you have the parameter space to spare
-  - 4 (32 bits)
-  - 8 (64 bits)
-  - 16 (128 bits)
+  - 4 (41 bits)
+  - 8 (73 bits)
+  - 16 (137 bits)
   
 
 
