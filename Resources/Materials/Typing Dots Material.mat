@@ -228,7 +228,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlipbookTexArray:
-        m_Texture: {fileID: 18700000, guid: f306228e9ccbb814d9b9ed6e695c42d1, type: 2}
+        m_Texture: {fileID: 18700000, guid: 32150788518bd6e4c82efe699e4c323d, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GlitterColorMap:
