@@ -4,62 +4,76 @@
 
 [![Download](https://img.shields.io/badge/DOWNLOAD-3.1.2-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.2/Frosty.Billboard.v3.1.2.unitypackage)
 [![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4(MAY%20BE%20BUGGY)-orange)](https://github.com/Frosty704/Billboard/releases/tag/main-v4)
-[![Showcase Video](https://img.shields.io/badge/-Showcase%20Video-red)](https://www.youtube.com/watch?v=EEFF2Bty78A) 
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
 
 
-Frosty's billboard is a container for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints you can have a speech bubble with the ability to drop it in the world, resizing it, grabbing and moving it around, posing it however you'd like, or just having it move with your head!
+## Frosty's billboard is a speech bubble prefab for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints, making it easier to converse as a mute without being a global broadcast via the in-game chatbox
 
-It uses 500 polygons, 4 material slots, 12 bits of parameter space, and 6 constraints.
+It uses:
+- 500 polygons
+- 4 material slots
+- 14 bits of parameter space
+- 6 constraints
 
-Required parameter space for the text system will depend on how fast you want the text to render, read more [Here](https://github.com/killfrenzy96/KillFrenzyAvatarText#prerequisites)
+Required parameter space for the KAT text system will depend on how fast you want the text to render,
+- At the least,  you ideally want 4, for most users 8, and 16 if you have the parameter space to spare
+  - 4 (32 bits)
+  - 8 (64 bits)
+  - 16 (128 bits)
+  
 
-![Header Gif](https://user-images.githubusercontent.com/36753686/215548015-c31b936c-6808-4f33-89ae-ffe9a95e6cdc.gif)
+
+![headergif](https://user-images.githubusercontent.com/36753686/236354169-58335675-8ccc-4672-805b-977ed39163c5.gif)
 
 
-# Speech Parsers
-- [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
- An OSC program allowing speech to text, speech to text to speech, and text to text outputting to the KAT, making use of one of five speech recognition methods, Microsoft Azure, OpenAI's Whisper, Vosk, Web Captioner, or System Speech.
-  - It also supports emotes replacing the original set of Japanese Hiragana, as seen in some screenshots
-  - Many more cool & quality of life features
+
+# Recommended OSC Speech to Text programs
+
+## [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
+ An OSC program allowing speech to text, speech to text to speech, and text to text
+ making use of one of five speech recognition methods, 
+   - Microsoft Azure
+   - OpenAI's Whisper 
+   - Vosk 
+   - Web Captioner
+   - System Speech.
+   - Emote Support
+   - Many more cool & quality of life features such as chatbox media integration
  
- - [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
- Another OSC program making use of [OpenAI's Whisper](https://github.com/openai/whisper) which runs locally on your GPU or CPU to transcribe speech and outputs to the   KAT.
-   - In my experience it has great, almost Azure quality, speech recognition for free with a simple setup.
-   - Supports emotes and text to text.
+ ##
+ 
+ ## [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
+   An OSC program making use of OpenAI's Whisper which runs locally on your GPU or CPU to transcribe speech with low latency
+   - Simple setup
    - Intuitive SteamVR binding system, press to transcribe, hold to clear
+   - Emote support
+   - Realtime speech to text
 
 # Features & Showcase
-
- - # [Image Showcase](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
-
- - # [Video Demonstration](https://youtu.be/EEFF2Bty78A)
 
 - Speech to Text & emotes using [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
 
 ![1_stt](https://user-images.githubusercontent.com/36753686/223066845-2eddf954-c953-4dd4-816c-e0fbb5684ec0.gif)
 
-![2_stt](https://user-images.githubusercontent.com/36753686/223067897-111e4702-c458-494a-ae79-f67520f074a5.gif)
 
+- Hold it in your hand and drop it in the world, grab with a fist or thumbs up!
 
-- Hold it in your hand!
-<img src="https://user-images.githubusercontent.com/36753686/216971730-91ce1221-bc68-4af0-b51b-da25ce69a4ac.gif" width="640" height="360">
+![lefthandgrab](https://user-images.githubusercontent.com/36753686/236354267-9cea9674-2851-42f4-b93f-885036ac58a5.gif)
 
 - Resizing
 <img src="https://user-images.githubusercontent.com/36753686/216971720-44d1eed9-4c7f-467c-b0b8-2ba693de8cee.gif" width="640" height="360">
 
-- Drop it in the world and grab with a fist or thumbs up
-<img src="https://user-images.githubusercontent.com/36753686/216971712-3f53efe3-8692-4365-af1c-473c26e6f12c.gif" width="640" height="360">
-
 - Drop it anywhere and have it follow you
 <img src="https://user-images.githubusercontent.com/36753686/216971704-204f0a05-6ced-48b5-84be-612ec9d53a53.gif" width="640" height="360">
  
+- Typing Dots indicator with [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT) and [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard)
+
+![typingdotsindicator](https://user-images.githubusercontent.com/36753686/236354712-a617f28c-75c1-4591-86de-860f6feb9fcc.gif)
+
  - Customizability made easy!
 <img src="https://user-images.githubusercontent.com/36753686/216710639-160766ef-c096-4c22-9faf-93d7e5dc267c.gif" width="640" height="360">
 
- - Even AudioLink if you want!
-
-https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-8e37-fb3a487e5f71.mp4
+![w11 mats](https://user-images.githubusercontent.com/36753686/236354192-58036f1f-5e04-4ee3-891c-3e78bd6fae45.gif)
 
  - Someone have your shaders/custom animations hidden? A fallback message will show instead. 
 
@@ -70,7 +84,7 @@ https://user-images.githubusercontent.com/36753686/216976742-8a8fc908-cbd8-4d6a-
 - [KillFrenzyAvatarText 1.3.2](https://github.com/killfrenzy96/KillFrenzyAvatarText/releases/tag/1.3.2)
 - [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager) to make installation much easier.
 - [Poiyomi 8.1](https://github.com/poiyomi/PoiyomiToonShader/releases) Specific version used is 8.1.163
-- 12 bits of parameter space (Billboard only), 4 if you opt out for manual resizing.
+- 14 bits of parameter space (Not including the KAT system parameter requirement)
 - This prefab was made with write defaults off, your avatar should too to avoid potential issues. (or turn all write defaults on in the FX)
 - PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 
