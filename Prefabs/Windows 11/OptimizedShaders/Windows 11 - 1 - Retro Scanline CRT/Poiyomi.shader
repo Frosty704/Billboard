@@ -1,4 +1,4 @@
-Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0714098f6"
+Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/d74ed17a3c01e9e42904424b79fee5a1"
 {
 	Properties
 	{
@@ -3327,9 +3327,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);
@@ -6679,9 +6679,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);
@@ -9049,9 +9049,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);

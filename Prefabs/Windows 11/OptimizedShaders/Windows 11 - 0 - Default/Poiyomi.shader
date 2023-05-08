@@ -1,4 +1,4 @@
-Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0714098f6"
+Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b21e30294a6e07741a98eb57b07aa00b"
 {
 	Properties
 	{
@@ -166,7 +166,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 		_DecalRotation1 ("Rotation", Range(0, 360)) = 0
 		_DecalRotationSpeed1 ("Rotation Speed", Float) = 0
 		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType1 ("Blending", Range(0, 1)) = 0
-		_DecalBlendAlpha1 ("Alpha", Range(0, 1)) = 1
+		_DecalBlendAlpha1_Windows112D02DDefault ("Alpha", Range(0, 1)) = 1
 		[ToggleUI]_DecalOverrideAlpha1 ("Override Alpha", Float) = 0
 		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal1ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal1ApplyGlobalMaskBlendType}", Int) = 0
 		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal1ApplyGlobalMaskBlendType ("Blending", Int) = 0
@@ -227,7 +227,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 		_DecalRotation2 ("Rotation", Range(0, 360)) = 0
 		_DecalRotationSpeed2 ("Rotation Speed", Float) = 0
 		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType2 ("Blending", Range(0, 1)) = 0
-		_DecalBlendAlpha2 ("Alpha", Range(0, 1)) = 1
+		_DecalBlendAlpha2_Windows112D02DDefault ("Alpha", Range(0, 1)) = 1
 		[ToggleUI]_DecalOverrideAlpha2 ("Override Alpha", Float) = 0
 		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal2ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal2ApplyGlobalMaskBlendType}", Int) = 0
 		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal2ApplyGlobalMaskBlendType ("Blending", Int) = 0
@@ -288,7 +288,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 		_DecalRotation3 ("Rotation", Range(0, 360)) = 0
 		_DecalRotationSpeed3 ("Rotation Speed", Float) = 0
 		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType3 ("Blending", Range(0, 1)) = 0
-		_DecalBlendAlpha3 ("Alpha", Range(0, 1)) = 1
+		_DecalBlendAlpha3_Windows112D02DDefault ("Alpha", Range(0, 1)) = 1
 		[ToggleUI]_DecalOverrideAlpha3 ("Override Alpha", Float) = 0
 		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal3ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal3ApplyGlobalMaskBlendType}", Int) = 0
 		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal3ApplyGlobalMaskBlendType ("Blending", Int) = 0
@@ -572,6 +572,66 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 		_FlipbookChronotensitySpeed ("Chrono Speed--{ condition_showS:_FlipbookChronotensityEnabled==1}", Float) = 0
 		[HideInInspector] m_end_FlipbookAudioLink ("Audio Link", Float) = 0
 		[HideInInspector] m_end_flipBook ("Flipbook", Float) = 0
+		[HideInInspector] m_start_emissionOptions ("Emission 0--{reference_property:_EnableEmission,button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/special-fx/emission},hover:Documentation}}", Float) = 0
+		[HideInInspector][ThryToggle(_EMISSION)]_EnableEmission ("Enable Emission", Float) = 0
+		[ToggleUI]_EmissionReplace0 ("Replace Base Color", Float) = 0
+		[HDR]_EmissionColor ("Emission Color--{reference_property:_EmissionColorThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _EmissionColorThemeIndex ("", Int) = 0
+		[sRGBWarning(true)][Gradient]_EmissionMap ("Emission Map--{reference_properties:[_EmissionMapPan, _EmissionMapUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_EmissionMapPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _EmissionMapUV ("UV", Int) = 0
+		[ToggleUI]_EmissionBaseColorAsMap ("Base Color as Map", Float) = 0
+		[sRGBWarning]_EmissionMask ("Emission Mask--{reference_properties:[_EmissionMaskPan, _EmissionMaskUV, _EmissionMaskChannel, _EmissionMaskInvert]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_EmissionMaskPan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _EmissionMaskUV ("UV", Int) = 0
+		[HideInInspector][Enum(R, 0, G, 1, B, 2, A, 3)]_EmissionMaskChannel ("Channel", Float) = 0
+		[ToggleUI]_EmissionMaskInvert ("Invert", Float) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _EmissionMask0GlobalMask ("Global Mask--{reference_property:_EmissionMask0GlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_EmissionMask0GlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		_EmissionStrength ("Emission Strength", Range(0, 20)) = 0
+		[Space(4)]
+		[ThryToggleUI(true)]_EmissionHueShiftEnabled ("<size=13><b>  Hue Shift</b></size>", Float) = 0
+		_EmissionHueShift ("Hue Shift--{condition_showS:(_EmissionHueShiftEnabled==1)}", Range(0, 1)) = 0
+		_EmissionHueShiftSpeed ("Hue Shift Speed--{condition_showS:(_EmissionHueShiftEnabled==1)}", Float) = 0
+		[Space(4)]
+		[ThryToggleUI(true)]_EmissionCenterOutEnabled ("<size=13><b>  Center Out</b></size>", Float) = 0
+		_EmissionCenterOutSpeed ("Flow Speed--{condition_showS:(_EmissionCenterOutEnabled==1)}", Float) = 5
+		[Space(4)]
+		[ThryToggleUI(true)]_EnableGITDEmission ("<size=13><b>  Light Based</b></size>", Float) = 0
+		[Enum(World, 0, Mesh, 1)] _GITDEWorldOrMesh ("Lighting Type--{condition_showS:(_EnableGITDEmission==1)}", Int) = 0
+		_GITDEMinEmissionMultiplier ("Min Emission Multiplier--{condition_showS:(_EnableGITDEmission==1)}", Range(0, 1)) = 1
+		_GITDEMaxEmissionMultiplier ("Max Emission Multiplier--{condition_showS:(_EnableGITDEmission==1)}", Range(0, 1)) = 0
+		_GITDEMinLight ("Min Lighting--{condition_showS:(_EnableGITDEmission==1)}", Range(0, 1)) = 0
+		_GITDEMaxLight ("Max Lighting--{condition_showS:(_EnableGITDEmission==1)}", Range(0, 1)) = 1
+		[Space(4)]
+		[ThryToggleUI(true)]_EmissionBlinkingEnabled ("<size=13><b>  Blinking</b></size>", Float) = 0
+		_EmissiveBlink_Min ("Emissive Blink Min--{condition_showS:(_EmissionBlinkingEnabled==1)}", Float) = 0
+		_EmissiveBlink_Max ("Emissive Blink Max--{condition_showS:(_EmissionBlinkingEnabled==1)}", Float) = 1
+		_EmissiveBlink_Velocity ("Emissive Blink Velocity--{condition_showS:(_EmissionBlinkingEnabled==1)}", Float) = 4
+		_EmissionBlinkingOffset ("Offset--{condition_showS:(_EmissionBlinkingEnabled==1)}", Float) = 0
+		[Space(4)]
+		[ThryToggleUI(true)] _ScrollingEmission ("<size=13><b>  Scrolling</b></size>", Float) = 0
+		[ToggleUI]_EmissionScrollingUseCurve ("Use Curve--{condition_showS:(_ScrollingEmission==1)}", float) = 0
+		[Curve]_EmissionScrollingCurve ("Curve--{condition_showS:(_ScrollingEmission==1&&_EmissionScrollingUseCurve==1)}", 2D) = "white" { }
+		[ToggleUI]_EmissionScrollingVertexColor ("VColor as position--{condition_showS:(_ScrollingEmission==1)}", float) = 0
+		_EmissiveScroll_Direction ("Direction--{condition_showS:(_ScrollingEmission==1)}", Vector) = (0, -10, 0, 0)
+		_EmissiveScroll_Width ("Width--{condition_showS:(_ScrollingEmission==1)}", Float) = 10
+		_EmissiveScroll_Velocity ("Velocity--{condition_showS:(_ScrollingEmission==1)}", Float) = 10
+		_EmissiveScroll_Interval ("Interval--{condition_showS:(_ScrollingEmission==1)}", Float) = 20
+		_EmissionScrollingOffset ("Offset--{condition_showS:(_ScrollingEmission==1)}", Float) = 0
+		[Space(4)]
+		[ThryToggleUI(true)] _EmissionAL0Enabled ("<size=13><b>  Audio Link</b></size>--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _EmissionAL0MultipliersBand ("Emission Multiplier Band--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_EmissionAL0Multipliers ("Emission Multiplier--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Vector) = (1, 1, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _EmissionAL0StrengthBand ("Emission Strength Add Band--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_EmissionAL0StrengthMod ("Emission Strength Add--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkEmission0CenterOutBand ("Center Out Band--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Int) = 0
+		[VectorLabel(Min, Max)] _AudioLinkEmission0CenterOut ("Center Out--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Vector) = (0, 0, 0, 0)
+		_AudioLinkEmission0CenterOutSize ("Intensity Threshold--{ condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Range(0, 1)) = 0
+		_AudioLinkEmission0CenterOutDuration ("Duration--{tooltip:''How much AL history is used. Negative values reverse direction'', condition_showS:(_EmissionAL0Enabled==1 && _EnableAudioLink==1)}", Range(-1, 1)) = 1
+		[HideInInspector] m_end_emissionOptions ("", Float) = 0
 		[HideInInspector] m_start_videoEffects ("Video Effects--{reference_property:_VideoEffectsEnable}", Float) = 0
 		[HideInInspector][ThryToggle]_VideoEffectsEnable ("Enable VideoEffects", Float) = 0
 		[Enum(LCD, 0, TN, 1, CRT, 2, OLED, 3, Gameboy, 4, Projector, 5)] _VideoType ("Screen Type", Int) = 3
@@ -720,12 +780,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
  #define GEOM_TYPE_BRANCH_DETAIL 
  #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
+ #define _EMISSION 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
+ #define PROP_EMISSIONMASK 
+ #define PROP_EMISSIONSCROLLINGCURVE 
  #define PROP_VIDEOPIXELTEXTURE 
  #define PROP_VIDEOMASKTEXTURE 
  #define OPTIMIZER_ENABLED 
@@ -1058,7 +1121,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition1;
 			half _DecalRotationSpeed1;
 			float _DecalEmissionStrength1;
-			float _DecalBlendAlpha1;
+			float _DecalBlendAlpha1_Windows112D02DDefault;
 			float _DecalOverrideAlpha1;
 			float _DecalHueShiftEnabled1;
 			float _DecalHueShift1;
@@ -1092,7 +1155,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition2;
 			half _DecalRotationSpeed2;
 			float _DecalEmissionStrength2;
-			float _DecalBlendAlpha2;
+			float _DecalBlendAlpha2_Windows112D02DDefault;
 			float _DecalOverrideAlpha2;
 			float _DecalHueShiftEnabled2;
 			float _DecalHueShift2;
@@ -1126,7 +1189,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition3;
 			half _DecalRotationSpeed3;
 			float _DecalEmissionStrength3;
-			float _DecalBlendAlpha3;
+			float _DecalBlendAlpha3_Windows112D02DDefault;
 			float _DecalOverrideAlpha3;
 			float _DecalHueShiftEnabled3;
 			float _DecalHueShift3;
@@ -1210,6 +1273,66 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half _AudioLinkFlipbookFrameBand;
 			half2 _AudioLinkFlipbookFrame;
 			#endif
+			#endif
+			#ifdef _EMISSION
+			#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _EmissionMap;
+			#endif
+			float4 _EmissionMap_ST;
+			float2 _EmissionMapPan;
+			float _EmissionMapUV;
+			#if defined(PROP_EMISSIONMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _EmissionMask;
+			#endif
+			float4 _EmissionMask_ST;
+			float2 _EmissionMaskPan;
+			float _EmissionMaskUV;
+			float _EmissionMaskInvert;
+			float _EmissionMaskChannel;
+			float _EmissionMask0GlobalMask;
+			float _EmissionMask0GlobalMaskBlendType;
+			#if defined(PROP_EMISSIONSCROLLINGCURVE) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _EmissionScrollingCurve;
+			#endif
+			float4 _EmissionScrollingCurve_ST;
+			float4 _EmissionColor;
+			float _EmissionBaseColorAsMap;
+			float _EmissionStrength;
+			float _EmissionHueShiftEnabled;
+			float _EmissionHueShift;
+			float _EmissionHueShiftSpeed;
+			float _EmissionCenterOutEnabled;
+			float _EmissionCenterOutSpeed;
+			float _EnableGITDEmission;
+			float _GITDEWorldOrMesh;
+			float _GITDEMinEmissionMultiplier;
+			float _GITDEMaxEmissionMultiplier;
+			float _GITDEMinLight;
+			float _GITDEMaxLight;
+			float _EmissionBlinkingEnabled;
+			float _EmissiveBlink_Min;
+			float _EmissiveBlink_Max;
+			float _EmissiveBlink_Velocity;
+			float _EmissionBlinkingOffset;
+			float _ScrollingEmission;
+			float4 _EmissiveScroll_Direction;
+			float _EmissiveScroll_Width;
+			float _EmissiveScroll_Velocity;
+			float _EmissiveScroll_Interval;
+			float _EmissionScrollingOffset;
+			float _EmissionReplace0;
+			float _EmissionScrollingVertexColor;
+			float _EmissionScrollingUseCurve;
+			float _EmissionColorThemeIndex;
+			float _EmissionAL0Enabled;
+			float2 _EmissionAL0StrengthMod;
+			float _EmissionAL0StrengthBand;
+			float2 _AudioLinkEmission0CenterOut;
+			float _AudioLinkEmission0CenterOutSize;
+			float _AudioLinkEmission0CenterOutBand;
+			float _AudioLinkEmission0CenterOutDuration;
+			float2 _EmissionAL0Multipliers;
+			float _EmissionAL0MultipliersBand;
 			#endif
 			float _PPLightingMultiplier;
 			float _PPLightingAddition;
@@ -2911,7 +3034,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal1.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal1.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed1*/);
 				Decal1.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength1*/);
-				Decal1.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha1*/);
+				Decal1.m_DecalBlendAlpha 					 = _DecalBlendAlpha1_Windows112D02DDefault;
 				Decal1.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha1*/);
 				Decal1.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled1*/);
 				Decal1.m_DecalHueShift 						 = (0.0 /*_DecalHueShift1*/);
@@ -2976,7 +3099,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal2.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal2.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed2*/);
 				Decal2.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength2*/);
-				Decal2.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha2*/);
+				Decal2.m_DecalBlendAlpha 					 = _DecalBlendAlpha2_Windows112D02DDefault;
 				Decal2.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha2*/);
 				Decal2.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled2*/);
 				Decal2.m_DecalHueShift 						 = (0.0 /*_DecalHueShift2*/);
@@ -3041,7 +3164,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal3.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal3.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed3*/);
 				Decal3.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength3*/);
-				Decal3.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha3*/);
+				Decal3.m_DecalBlendAlpha 					 = _DecalBlendAlpha3_Windows112D02DDefault;
 				Decal3.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha3*/);
 				Decal3.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled3*/);
 				Decal3.m_DecalHueShift 						 = (0.0 /*_DecalHueShift3*/);
@@ -3327,9 +3450,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);
@@ -3415,6 +3538,143 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				#endif
 			}
 			#endif
+			float calculateGlowInTheDark(in float minLight, in float maxLight, in float minEmissionMultiplier, in float maxEmissionMultiplier, in float enabled, in float worldOrMesh, in PoiLight poiLight)
+			{
+				float glowInTheDarkMultiplier = 1;
+				if (enabled)
+				{
+					float3 lightValue = worldOrMesh ? calculateluminance(poiLight.finalLighting.rgb) : calculateluminance(poiLight.directColor.rgb);
+					float gitdeAlpha = saturate(inverseLerp(minLight, maxLight, lightValue));
+					glowInTheDarkMultiplier = lerp(minEmissionMultiplier, maxEmissionMultiplier, gitdeAlpha);
+				}
+				return glowInTheDarkMultiplier;
+			}
+			float calculateScrollingEmission(in float3 direction, in float velocity, in float interval, in float scrollWidth, float offset, float3 position)
+			{
+				scrollWidth = max(scrollWidth, 0);
+				float phase = 0;
+				phase = dot(position, direction);
+				phase -= (_Time.y + offset) * velocity;
+				phase /= interval;
+				phase -= floor(phase);
+				phase = saturate(phase);
+				return (pow(phase, scrollWidth) + pow(1 - phase, scrollWidth * 4)) * 0.5;
+			}
+			float calculateBlinkingEmission(in float blinkMin, in float blinkMax, in float blinkVelocity, float offset)
+			{
+				float amplitude = (blinkMax - blinkMin) * 0.5f;
+				float base = blinkMin + amplitude;
+				return sin((_Time.y + offset) * blinkVelocity) * amplitude + base;
+			}
+			void applyALEmmissionStrength(in PoiMods poiMods, inout float emissionStrength, in float2 emissionStrengthMod, in float emissionStrengthBand, in float2 _EmissionALMultipliers, in float _EmissionALMultipliersBand, in float enabled)
+			{
+				#ifdef POI_AUDIOLINK
+				if (poiMods.audioLinkAvailable && enabled)
+				{
+					emissionStrength += lerp(emissionStrengthMod.x, emissionStrengthMod.y, poiMods.audioLink[emissionStrengthBand]);
+					emissionStrength *= lerp(_EmissionALMultipliers.x, _EmissionALMultipliers.y, poiMods.audioLink[_EmissionALMultipliersBand]);
+				}
+				#endif
+			}
+			void applyALCenterOutEmission(in PoiMods poiMods, in float nDotV, inout float emissionStrength, in float size, in float band, in float2 emissionToAdd, in float enabled, in float duration)
+			{
+				#ifdef POI_AUDIOLINK
+				if (poiMods.audioLinkAvailable && enabled)
+				{
+					float intensity;
+					[flatten]
+					if(duration >= 0)
+					{
+						intensity = getBandAtTime(band, saturate(remap(nDotV, 1, 0, 0, duration)), size);
+					}
+					else
+					{
+						duration *= -1;
+						intensity = getBandAtTime(band, saturate(remap(pow(nDotV, 2), 0, 1 + duration, 0, duration)), size);
+					}
+					emissionStrength += lerp(emissionToAdd[0], emissionToAdd[1], intensity);
+				}
+				#endif
+			}
+			void applyLumaGradient(in PoiMods poiMods, inout float3 emissionColor, in float themeIndex, in float nDotV)
+			{
+				#ifdef POI_AUDIOLINK
+				if (poiMods.audioLinkAvailable && poiMods.audioLinkViaLuma && themeIndex >= 5 && themeIndex <= 7)
+				{
+					emissionColor = getLumaGradient(themeIndex-5, saturate(1 - nDotV));
+				}
+				#endif
+			}
+			#ifdef _EMISSION
+			float3 applyEmission(inout PoiFragData poiFragData, in PoiMesh poiMesh, in PoiLight poiLight, in PoiCam poiCam, in PoiMods poiMods)
+			{
+				float3 emission0 = 0;
+				float emissionStrength0 = (1.0 /*_EmissionStrength*/);
+				float3 emissionColor0 = 0;
+				float glowInTheDarkMultiplier0 = calculateGlowInTheDark((0.0 /*_GITDEMinLight*/), (1.0 /*_GITDEMaxLight*/), (1.0 /*_GITDEMinEmissionMultiplier*/), (0.0 /*_GITDEMaxEmissionMultiplier*/), (0.0 /*_EnableGITDEmission*/), (0.0 /*_GITDEWorldOrMesh*/), poiLight);
+				#if defined(PROP_EMISSIONMAP) || !defined(OPTIMIZER_ENABLED)
+				if (!(0.0 /*_EmissionCenterOutEnabled*/))
+				{
+					emissionColor0 = POI2D_SAMPLER_PAN(_EmissionMap, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(1,1,0,0)), float4(0,0,0,0)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(0.1549673,0,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+				}
+				else
+				{
+					emissionColor0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMap, _MainTex, ((.5 + poiLight.nDotV * .5) * float4(1,1,0,0).xy) + _Time.x * (5.0 /*_EmissionCenterOutSpeed*/)).rgb * lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(0.1549673,0,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+				}
+				#else
+				emissionColor0 = lerp(1, poiFragData.baseColor, (0.0 /*_EmissionBaseColorAsMap*/)).rgb * poiThemeColor(poiMods, float4(0.1549673,0,1,1).rgb, (0.0 /*_EmissionColorThemeIndex*/));
+				#endif
+				if ((1.0 /*_ScrollingEmission*/))
+				{
+					float3 pos = poiMesh.localPos;
+					if ((0.0 /*_EmissionScrollingVertexColor*/))
+					{
+						pos = poiMesh.vertexColor.rgb;
+					}
+					if ((1.0 /*_EmissionScrollingUseCurve*/))
+					{
+						#if defined(PROP_EMISSIONSCROLLINGCURVE) || !defined(OPTIMIZER_ENABLED)
+						emissionStrength0 *= UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionScrollingCurve, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMapUV*/)], float4(1,1,0,0)) + (dot(pos, float4(0,-10,0,0).xyz) * (20.0 /*_EmissiveScroll_Interval*/)) + _Time.x * (10.0 /*_EmissiveScroll_Velocity*/)).r;
+						#endif
+					}
+					else
+					{
+						emissionStrength0 *= calculateScrollingEmission(float4(0,-10,0,0).xyz, (10.0 /*_EmissiveScroll_Velocity*/), (20.0 /*_EmissiveScroll_Interval*/), (10.0 /*_EmissiveScroll_Width*/), (0.0 /*_EmissionScrollingOffset*/), pos);
+					}
+				}
+				if ((0.0 /*_EmissionBlinkingEnabled*/))
+				{
+					emissionStrength0 *= calculateBlinkingEmission((0.0 /*_EmissiveBlink_Min*/), (1.0 /*_EmissiveBlink_Max*/), (4.0 /*_EmissiveBlink_Velocity*/), (0.0 /*_EmissionBlinkingOffset*/));
+				}
+				applyLumaGradient(poiMods, emissionColor0, (0.0 /*_EmissionColorThemeIndex*/), poiLight.nDotV);
+				emissionColor0 = hueShift(emissionColor0, frac((0.0 /*_EmissionHueShift*/) + (0.0 /*_EmissionHueShiftSpeed*/) * _Time.x) * (0.0 /*_EmissionHueShiftEnabled*/));
+				#if defined(PROP_EMISSIONMASK) || !defined(OPTIMIZER_ENABLED)
+				float emissionMask0 = UNITY_SAMPLE_TEX2D_SAMPLER(_EmissionMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_EmissionMaskUV*/)], float4(1,1,0,0)) + _Time.x * float4(0,0,0,0))[(0.0 /*_EmissionMaskChannel*/)];
+				#else
+				float emissionMask0 = 1;
+				#endif
+				if ((0.0 /*_EmissionMaskInvert*/))
+				{
+					emissionMask0 = 1 - emissionMask0;
+				}
+				if ((0.0 /*_EmissionMask0GlobalMask*/) > 0)
+				{
+					emissionMask0 = customBlend(emissionMask0, poiMods.globalMask[(0.0 /*_EmissionMask0GlobalMask*/)-1], (2.0 /*_EmissionMask0GlobalMaskBlendType*/));
+				}
+				applyALEmmissionStrength(poiMods, emissionStrength0, float4(0,0,0,0), (0.0 /*_EmissionAL0StrengthBand*/), float4(1,1,0,0), (0.0 /*_EmissionAL0MultipliersBand*/), (0.0 /*_EmissionAL0Enabled*/));
+				applyALCenterOutEmission(poiMods, poiLight.nDotV, emissionStrength0, (0.0 /*_AudioLinkEmission0CenterOutSize*/), (0.0 /*_AudioLinkEmission0CenterOutBand*/), float4(0,0,0,0), (0.0 /*_EmissionAL0Enabled*/), (1.0 /*_AudioLinkEmission0CenterOutDuration*/));
+				emissionStrength0 *= glowInTheDarkMultiplier0 * emissionMask0;
+				emission0 = max(emissionStrength0 * emissionColor0, 0);
+				#ifdef POI_DISSOLVE
+				if (_DissolveEmissionSide != 2)
+				{
+					emission0 *= lerp(1 - dissolveAlpha, dissolveAlpha, _DissolveEmissionSide);
+				}
+				#endif
+				poiFragData.emission += emission0;
+				return emission0 * (0.0 /*_EmissionReplace0*/);
+			}
+			#endif
 			float3 applyBacklight(float3 videoTexture, half backlightStrength)
 			{
 				return max(backlightStrength, videoTexture.rgb);
@@ -3438,9 +3698,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			float calculateCRTPixelBrightness(float2 uv)
 			{
-				float totalPixels = float4(640,480,0,0).x * float4(640,480,0,0).y;
-				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,480,0,0).y)) / float4(640,480,0,0).y, (floor(uv.x * float4(640,480,0,0).x)) / float4(640,480,0,0).x);
-				float currentPixelNumber = float4(640,480,0,0).x * (float4(640,480,0,0).y * uvPixel.x) + float4(640,480,0,0).y * uvPixel.y;
+				float totalPixels = float4(640,360,0,0).x * float4(640,360,0,0).y;
+				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,360,0,0).y)) / float4(640,360,0,0).y, (floor(uv.x * float4(640,360,0,0).x)) / float4(640,360,0,0).x);
+				float currentPixelNumber = float4(640,360,0,0).x * (float4(640,360,0,0).y * uvPixel.x) + float4(640,360,0,0).y * uvPixel.y;
 				float currentPixelAlpha = currentPixelNumber / totalPixels;
 				half electronBeamAlpha = frac(_Time.y * (1.0 /*_VideoCRTRefreshRate*/));
 				float electronBeamPixelNumber = totalPixels * electronBeamAlpha;
@@ -3478,27 +3738,27 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			void calculateLCD(inout float4 videoTexture, float3 pixels)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateTN(inout float4 videoTexture, float3 pixels, PoiCam poiCam, PoiMesh poiMesh)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				videoTexture.rgb = applyViewAngleTN(videoTexture, poiCam, poiMesh);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateCRT(inout float4 videoTexture, float3 pixels, float2 uv)
 			{
 				float brightness = calculateCRTPixelBrightness(uv);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * brightness * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * brightness * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateOLED(inout float4 videoTexture, float3 pixels)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateGameboy(inout float4 videoTexture)
 			{
@@ -3515,7 +3775,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void calculateProjector(inout float4 videoTexture)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				float3 projectorColor = videoTexture * (1.0 /*_VideoBacklight*/);
+				float3 projectorColor = videoTexture * (2.0 /*_VideoBacklight*/);
 				videoTexture.r = clamp(projectorColor.r, videoTexture.r, 1000);
 				videoTexture.g = clamp(projectorColor.g, videoTexture.g, 1000);
 				videoTexture.b = clamp(projectorColor.b, videoTexture.b, 1000);
@@ -3526,7 +3786,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
 					float2 originalUVs = uvs;
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 					mainTexture = _MainTex.SampleGrad(sampler_MainTex, uvs, ddx(originalUVs), ddy(originalUVs));
 				}
@@ -3534,14 +3794,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void applyVideoEffects(inout PoiFragData poiFragData, in PoiCam poiCam, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
 			{
 				#if defined(PROP_VIDEOPIXELTEXTURE) || !defined(OPTIMIZER_ENABLED)
-				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,480,0,0));
+				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,360,0,0));
 				#else
 				float3 pixels = 1;
 				#endif
 				float2 uvs = poiMesh.uv[(0.0 /*_MainTexUV*/)];
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 				}
 				else
@@ -3551,7 +3811,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				float4 modifiedVideoTexture = 0;
 				modifiedVideoTexture.rgb = poiFragData.baseColor;
 				modifiedVideoTexture.a = poiFragData.alpha;
-				switch((2.0 /*_VideoType*/))
+				switch((3.0 /*_VideoType*/))
 				{
 					case 0: // LCD
 					{
@@ -4027,6 +4287,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				poiFragData.finalColor = poiFragData.baseColor;
 				poiFragData.finalColor = poiFragData.baseColor * poiLight.finalLighting;
+				#if defined(_EMISSION) || defined(POI_EMISSION_1) || defined(POI_EMISSION_2) || defined(POI_EMISSION_3)
+				float3 emissionBaseReplace = 0;
+				#endif
+				#ifdef _EMISSION
+				emissionBaseReplace += applyEmission(poiFragData, poiMesh, poiLight, poiCam, poiMods);
+				#endif
+				#if defined(_EMISSION) || defined(POI_EMISSION_1) || defined(POI_EMISSION_2) || defined(POI_EMISSION_3)
+				poiFragData.finalColor.rgb = lerp(poiFragData.finalColor.rgb, saturate(emissionBaseReplace), poiMax(emissionBaseReplace));
+				#endif
 				if ((0.0 /*_IgnoreFog*/) == 0)
 				{
 					UNITY_APPLY_FOG(i.fogCoord, poiFragData.finalColor);
@@ -4077,12 +4346,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
  #define GEOM_TYPE_BRANCH_DETAIL 
  #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
+ #define _EMISSION 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
+ #define PROP_EMISSIONMASK 
+ #define PROP_EMISSIONSCROLLINGCURVE 
  #define PROP_VIDEOPIXELTEXTURE 
  #define PROP_VIDEOMASKTEXTURE 
  #define OPTIMIZER_ENABLED 
@@ -4414,7 +4686,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition1;
 			half _DecalRotationSpeed1;
 			float _DecalEmissionStrength1;
-			float _DecalBlendAlpha1;
+			float _DecalBlendAlpha1_Windows112D02DDefault;
 			float _DecalOverrideAlpha1;
 			float _DecalHueShiftEnabled1;
 			float _DecalHueShift1;
@@ -4448,7 +4720,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition2;
 			half _DecalRotationSpeed2;
 			float _DecalEmissionStrength2;
-			float _DecalBlendAlpha2;
+			float _DecalBlendAlpha2_Windows112D02DDefault;
 			float _DecalOverrideAlpha2;
 			float _DecalHueShiftEnabled2;
 			float _DecalHueShift2;
@@ -4482,7 +4754,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			half2 _DecalPosition3;
 			half _DecalRotationSpeed3;
 			float _DecalEmissionStrength3;
-			float _DecalBlendAlpha3;
+			float _DecalBlendAlpha3_Windows112D02DDefault;
 			float _DecalOverrideAlpha3;
 			float _DecalHueShiftEnabled3;
 			float _DecalHueShift3;
@@ -6263,7 +6535,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal1.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal1.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed1*/);
 				Decal1.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength1*/);
-				Decal1.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha1*/);
+				Decal1.m_DecalBlendAlpha 					 = _DecalBlendAlpha1_Windows112D02DDefault;
 				Decal1.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha1*/);
 				Decal1.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled1*/);
 				Decal1.m_DecalHueShift 						 = (0.0 /*_DecalHueShift1*/);
@@ -6328,7 +6600,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal2.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal2.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed2*/);
 				Decal2.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength2*/);
-				Decal2.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha2*/);
+				Decal2.m_DecalBlendAlpha 					 = _DecalBlendAlpha2_Windows112D02DDefault;
 				Decal2.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha2*/);
 				Decal2.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled2*/);
 				Decal2.m_DecalHueShift 						 = (0.0 /*_DecalHueShift2*/);
@@ -6393,7 +6665,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				Decal3.m_DecalPosition 						 = float4(0.84,0.48,0,0);
 				Decal3.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed3*/);
 				Decal3.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength3*/);
-				Decal3.m_DecalBlendAlpha 					 = (0.0 /*_DecalBlendAlpha3*/);
+				Decal3.m_DecalBlendAlpha 					 = _DecalBlendAlpha3_Windows112D02DDefault;
 				Decal3.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha3*/);
 				Decal3.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled3*/);
 				Decal3.m_DecalHueShift 						 = (0.0 /*_DecalHueShift3*/);
@@ -6679,9 +6951,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);
@@ -6790,9 +7062,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			float calculateCRTPixelBrightness(float2 uv)
 			{
-				float totalPixels = float4(640,480,0,0).x * float4(640,480,0,0).y;
-				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,480,0,0).y)) / float4(640,480,0,0).y, (floor(uv.x * float4(640,480,0,0).x)) / float4(640,480,0,0).x);
-				float currentPixelNumber = float4(640,480,0,0).x * (float4(640,480,0,0).y * uvPixel.x) + float4(640,480,0,0).y * uvPixel.y;
+				float totalPixels = float4(640,360,0,0).x * float4(640,360,0,0).y;
+				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,360,0,0).y)) / float4(640,360,0,0).y, (floor(uv.x * float4(640,360,0,0).x)) / float4(640,360,0,0).x);
+				float currentPixelNumber = float4(640,360,0,0).x * (float4(640,360,0,0).y * uvPixel.x) + float4(640,360,0,0).y * uvPixel.y;
 				float currentPixelAlpha = currentPixelNumber / totalPixels;
 				half electronBeamAlpha = frac(_Time.y * (1.0 /*_VideoCRTRefreshRate*/));
 				float electronBeamPixelNumber = totalPixels * electronBeamAlpha;
@@ -6830,27 +7102,27 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			void calculateLCD(inout float4 videoTexture, float3 pixels)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateTN(inout float4 videoTexture, float3 pixels, PoiCam poiCam, PoiMesh poiMesh)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				videoTexture.rgb = applyViewAngleTN(videoTexture, poiCam, poiMesh);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateCRT(inout float4 videoTexture, float3 pixels, float2 uv)
 			{
 				float brightness = calculateCRTPixelBrightness(uv);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * brightness * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * brightness * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateOLED(inout float4 videoTexture, float3 pixels)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateGameboy(inout float4 videoTexture)
 			{
@@ -6867,7 +7139,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void calculateProjector(inout float4 videoTexture)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				float3 projectorColor = videoTexture * (1.0 /*_VideoBacklight*/);
+				float3 projectorColor = videoTexture * (2.0 /*_VideoBacklight*/);
 				videoTexture.r = clamp(projectorColor.r, videoTexture.r, 1000);
 				videoTexture.g = clamp(projectorColor.g, videoTexture.g, 1000);
 				videoTexture.b = clamp(projectorColor.b, videoTexture.b, 1000);
@@ -6878,7 +7150,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
 					float2 originalUVs = uvs;
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 					mainTexture = _MainTex.SampleGrad(sampler_MainTex, uvs, ddx(originalUVs), ddy(originalUVs));
 				}
@@ -6886,14 +7158,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void applyVideoEffects(inout PoiFragData poiFragData, in PoiCam poiCam, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
 			{
 				#if defined(PROP_VIDEOPIXELTEXTURE) || !defined(OPTIMIZER_ENABLED)
-				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,480,0,0));
+				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,360,0,0));
 				#else
 				float3 pixels = 1;
 				#endif
 				float2 uvs = poiMesh.uv[(0.0 /*_MainTexUV*/)];
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 				}
 				else
@@ -6903,7 +7175,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				float4 modifiedVideoTexture = 0;
 				modifiedVideoTexture.rgb = poiFragData.baseColor;
 				modifiedVideoTexture.a = poiFragData.alpha;
-				switch((2.0 /*_VideoType*/))
+				switch((3.0 /*_VideoType*/))
 				{
 					case 0: // LCD
 					{
@@ -7432,12 +7704,15 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
  #define GEOM_TYPE_BRANCH_DETAIL 
  #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
+ #define _EMISSION 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
+ #define PROP_EMISSIONMASK 
+ #define PROP_EMISSIONSCROLLINGCURVE 
  #define PROP_VIDEOPIXELTEXTURE 
  #define PROP_VIDEOMASKTEXTURE 
  #define OPTIMIZER_ENABLED 
@@ -9049,9 +9324,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				}
 				if (!(0.0 /*_FlipbookManualFrameControl*/))
 				{
-					if ((15.0 /*_FlipbookFPS*/) != 0)
+					if ((10.0 /*_FlipbookFPS*/) != 0)
 					{
-						currentFrame = ((_Time.y / (1 / (15.0 /*_FlipbookFPS*/))) + (37.0 /*_FlipbookFrameOffset*/)) % totalFrames;
+						currentFrame = ((_Time.y / (1 / (10.0 /*_FlipbookFPS*/))) + (9.0 /*_FlipbookFrameOffset*/)) % totalFrames;
 						if ((0.0 /*_FlipbookStartAndEnd*/))
 						{
 							currentFrame += (0.0 /*_FlipbookStartFrame*/);
@@ -9160,9 +9435,9 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			float calculateCRTPixelBrightness(float2 uv)
 			{
-				float totalPixels = float4(640,480,0,0).x * float4(640,480,0,0).y;
-				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,480,0,0).y)) / float4(640,480,0,0).y, (floor(uv.x * float4(640,480,0,0).x)) / float4(640,480,0,0).x);
-				float currentPixelNumber = float4(640,480,0,0).x * (float4(640,480,0,0).y * uvPixel.x) + float4(640,480,0,0).y * uvPixel.y;
+				float totalPixels = float4(640,360,0,0).x * float4(640,360,0,0).y;
+				float2 uvPixel = float2((floor((1 - uv.y) * float4(640,360,0,0).y)) / float4(640,360,0,0).y, (floor(uv.x * float4(640,360,0,0).x)) / float4(640,360,0,0).x);
+				float currentPixelNumber = float4(640,360,0,0).x * (float4(640,360,0,0).y * uvPixel.x) + float4(640,360,0,0).y * uvPixel.y;
 				float currentPixelAlpha = currentPixelNumber / totalPixels;
 				half electronBeamAlpha = frac(_Time.y * (1.0 /*_VideoCRTRefreshRate*/));
 				float electronBeamPixelNumber = totalPixels * electronBeamAlpha;
@@ -9200,27 +9475,27 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			}
 			void calculateLCD(inout float4 videoTexture, float3 pixels)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateTN(inout float4 videoTexture, float3 pixels, PoiCam poiCam, PoiMesh poiMesh)
 			{
-				videoTexture.rgb = applyBacklight(videoTexture, (1.0 /*_VideoBacklight*/) * .01);
+				videoTexture.rgb = applyBacklight(videoTexture, (2.0 /*_VideoBacklight*/) * .01);
 				videoTexture.rgb = applyViewAngleTN(videoTexture, poiCam, poiMesh);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateCRT(inout float4 videoTexture, float3 pixels, float2 uv)
 			{
 				float brightness = calculateCRTPixelBrightness(uv);
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * brightness * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * brightness * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateOLED(inout float4 videoTexture, float3 pixels)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				videoTexture.rgb = videoTexture * pixels * (1.0 /*_VideoBacklight*/);
+				videoTexture.rgb = videoTexture * pixels * (2.0 /*_VideoBacklight*/);
 			}
 			void calculateGameboy(inout float4 videoTexture)
 			{
@@ -9237,7 +9512,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void calculateProjector(inout float4 videoTexture)
 			{
 				applyVideoSettings(videoTexture.rgb);
-				float3 projectorColor = videoTexture * (1.0 /*_VideoBacklight*/);
+				float3 projectorColor = videoTexture * (2.0 /*_VideoBacklight*/);
 				videoTexture.r = clamp(projectorColor.r, videoTexture.r, 1000);
 				videoTexture.g = clamp(projectorColor.g, videoTexture.g, 1000);
 				videoTexture.b = clamp(projectorColor.b, videoTexture.b, 1000);
@@ -9248,7 +9523,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
 					float2 originalUVs = uvs;
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 					mainTexture = _MainTex.SampleGrad(sampler_MainTex, uvs, ddx(originalUVs), ddy(originalUVs));
 				}
@@ -9256,14 +9531,14 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 			void applyVideoEffects(inout PoiFragData poiFragData, in PoiCam poiCam, in PoiMesh poiMesh, in PoiLight poiLight, in PoiMods poiMods)
 			{
 				#if defined(PROP_VIDEOPIXELTEXTURE) || !defined(OPTIMIZER_ENABLED)
-				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,480,0,0));
+				float3 pixels = tex2D(_VideoPixelTexture, poiUV(poiMesh.uv[(0.0 /*_VideoPixelTextureUV*/)], float4(1,1,0,0)) * float4(640,360,0,0));
 				#else
 				float3 pixels = 1;
 				#endif
 				float2 uvs = poiMesh.uv[(0.0 /*_MainTexUV*/)];
 				if((0.0 /*_VideoPixelateToResolution*/))
 				{
-					uvs = sharpSample(float4(1/float4(640,480,0,0).xy, float4(640,480,0,0).xy), uvs);
+					uvs = sharpSample(float4(1/float4(640,360,0,0).xy, float4(640,360,0,0).xy), uvs);
 					uvs = poiUV(uvs, float4(1,1,0,0)) + _Time.x * float4(0,0,0,0);
 				}
 				else
@@ -9273,7 +9548,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/7e81418388c6bd34fbb2a3b0
 				float4 modifiedVideoTexture = 0;
 				modifiedVideoTexture.rgb = poiFragData.baseColor;
 				modifiedVideoTexture.a = poiFragData.alpha;
-				switch((2.0 /*_VideoType*/))
+				switch((3.0 /*_VideoType*/))
 				{
 					case 0: // LCD
 					{

@@ -86,6 +86,250 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 		_Decal2TPSMaskStrength ("Mask b Strength--{condition_showS:(_DecalTPSDepthMaskEnabled==1)}", Range(0, 1)) = 1
 		_Decal3TPSMaskStrength ("Mask a Strength--{condition_showS:(_DecalTPSDepthMaskEnabled==1)}", Range(0, 1)) = 1
 		[HideInInspector] g_end_DecalTPSMaskGroup ("", Float) = 0
+		[HideInInspector] m_start_Decal0 ("Decal 0--{reference_property:_DecalEnabled}", Float) = 0
+		[HideInInspector][ThryToggle(GEOM_TYPE_BRANCH)]_DecalEnabled ("Enable", Float) = 0
+		[Enum(R, 0, G, 1, B, 2, A, 3)] _Decal0MaskChannel ("Mask Channel", Int) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal0GlobalMask ("Global Mask--{reference_property:_Decal0GlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_Decal0GlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		_DecalColor ("Color--{reference_property:_DecalColorThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _DecalColorThemeIndex ("", Int) = 0
+		_DecalEmissionStrength ("Emission Strength", Range(0, 20)) = 0
+		[sRGBWarning(true)]_DecalTexture ("Decal--{reference_properties:[_DecalTexturePan, _DecalTextureUV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_DecalTexturePan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _DecalTextureUV ("UV", Int) = 0
+		[ToggleUI]_DecalTiled ("Tiled", Float) = 0
+		_Decal0Depth ("Depth", Float) = 0
+		[Vector2]_DecalScale ("Scale", Vector) = (1, 1, 0, 0)
+		[VectorLabel(L, R, D, U)]_DecalSideOffset ("Side Offset", Vector) = (0, 0, 0, 0)
+		[Vector2]_DecalPosition ("Position", Vector) = (.5, .5, 0, 0)
+		_DecalRotation ("Rotation", Range(0, 360)) = 0
+		_DecalRotationSpeed ("Rotation Speed", Float) = 0
+		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType ("Blending", Range(0, 1)) = 0
+		_DecalBlendAlpha_Windows112D2 ("Alpha", Range(0, 1)) = 1
+		[ToggleUI]_DecalOverrideAlpha ("Override Alpha", Float) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal0ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal0ApplyGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal0ApplyGlobalMaskBlendType ("Blending", Int) = 0
+		[ThryToggleUI(true)]_DecalHueShiftEnabled ("<size=13><b>  Hue Shift</b></size>", Float) = 0
+		_DecalHueShiftSpeed ("Shift Speed--{condition_showS:(_DecalHueShiftEnabled==1)}", Float) = 0
+		_DecalHueShift ("Hue Shift--{condition_showS:(_DecalHueShiftEnabled==1)}", Range(0, 1)) = 0
+		_Decal0HueAngleStrength ("Hue Angle Power--{condition_showS:(_DecalHueShiftEnabled==1)}", Float) = 0
+		[NoAnimate][ThryToggle(true)]_Decal0ChannelSeparationEnable ("<size=13><b>  Channel Separation</b></size>", Float) = 0
+		[HideInInspector] g_start_Decal0ChannelSeparation ("--{condition_showS:_Decal0ChannelSeparationEnable==1}", Int) = 0
+		_Decal0ChannelSeparation ("Intensity", Float) = 0
+		_Decal0ChannelSeparationAngleStrength ("Surface Angle Intensity", Float) = 0
+		_Decal0ChannelSeparationHue ("Hue", Range(-1, 1)) = 0
+		_Decal0ChannelSeparationVertical ("Direction", Range(-3.142, 3.142)) = 0
+		[ToggleUI]_Decal0ChannelSeparationPremultiply ("Premultiply Alpha--{tooltip:''Fixes channel separation issues on some decal textures''}", Float) = 0
+		[HideInInspector] g_end_Decal0ChannelSeparation ("", Int) = 0
+		[HideInInspector] m_start_Decal0AudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0ScaleBand ("Scale Band", Int) = 0
+		[VectorLabel(Xmin, Ymin, Xmax, Ymax)]_AudioLinkDecal0Scale ("Scale Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0SideBand ("Side Band", Int) = 0
+		[VectorLabel(L, R, D, U)]_AudioLinkDecal0SideMin ("Side Mod Min", Vector) = (0, 0, 0, 0)
+		[VectorLabel(L, R, D, U)]_AudioLinkDecal0SideMax ("Side Mod Max", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0RotationBand ("Rotation Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal0Rotation ("Rotation Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0AlphaBand ("Alpha Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal0Alpha ("Alpha Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0EmissionBand ("Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal0Emission ("Emission Mod", Vector) = (0, 0, 0, 0)
+		[ToggleUI]_AudioLinkDecalCC0 ("CC Strip", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _DecalRotationCTALBand0 ("Chrono Rotation Band", Int) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_DecalRotationCTALType0 ("Chrono Motion Type", Int) = 0
+		_DecalRotationCTALSpeed0 ("Chrono Rotation Speed", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal0ChannelSeparationBand ("Channel Separation Band--{condition_showS:(_Decal0ChannelSeparationEnable==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal0ChannelSeparation ("Channel Separation--{condition_showS:(_Decal0ChannelSeparationEnable==1)}", Vector) = (0, 0, 0, 0)
+		[HideInInspector] m_end_Decal0AudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_Decal0 ("Decal 0", Float) = 0
+		[HideInInspector] m_start_Decal1 ("Decal 1--{reference_property:_DecalEnabled1}", Float) = 0
+		[HideInInspector][ThryToggle(GEOM_TYPE_BRANCH_DETAIL)]_DecalEnabled1 ("Enable", Float) = 0
+		[Enum(R, 0, G, 1, B, 2, A, 3)] _Decal1MaskChannel ("Mask Channel", Int) = 1
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal1GlobalMask ("Global Mask--{reference_property:_Decal1GlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_Decal1GlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		_DecalColor1 ("Color--{reference_property:_DecalColor1ThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _DecalColor1ThemeIndex ("", Int) = 0
+		_DecalEmissionStrength1 ("Emission Strength", Range(0, 20)) = 0
+		[sRGBWarning(true)]_DecalTexture1 ("Decal--{reference_properties:[_DecalTexture1Pan, _DecalTexture1UV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_DecalTexture1Pan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _DecalTexture1UV ("UV", Int) = 0
+		[ToggleUI]_DecalTiled1 ("Tiled", Float) = 0
+		_Decal1Depth ("Depth", Float) = 0
+		[Vector2]_DecalScale1 ("Scale", Vector) = (1, 1, 0, 0)
+		[VectorLabel(L, R, D, U)]_DecalSideOffset1 ("Side Offset", Vector) = (0, 0, 0, 0)
+		[Vector2]_DecalPosition1 ("Position", Vector) = (.5, .5, 0, 0)
+		_DecalRotation1 ("Rotation", Range(0, 360)) = 0
+		_DecalRotationSpeed1 ("Rotation Speed", Float) = 0
+		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType1 ("Blending", Range(0, 1)) = 0
+		_DecalBlendAlpha1_Windows112D2 ("Alpha", Range(0, 1)) = 1
+		[ToggleUI]_DecalOverrideAlpha1 ("Override Alpha", Float) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal1ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal1ApplyGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal1ApplyGlobalMaskBlendType ("Blending", Int) = 0
+		[ThryToggleUI(true)]_DecalHueShiftEnabled1 ("<size=13><b>Hue Shift</b></size>", Float) = 0
+		_DecalHueShiftSpeed1 ("Shift Speed--{condition_showS:(_DecalHueShiftEnabled1==1)}", Float) = 0
+		_DecalHueShift1 ("Hue Shift--{condition_showS:(_DecalHueShiftEnabled1==1)}", Range(0, 1)) = 0
+		_Decal1HueAngleStrength ("Hue Angle Power--{condition_showS:(_DecalHueShiftEnabled1==1)}", Float) = 0
+		[NoAnimate][ThryToggle(true)]_Decal1ChannelSeparationEnable ("<size=13><b>  Channel Separation</b></size>", Float) = 0
+		[HideInInspector] g_start_Decal1ChannelSeparation ("--{condition_showS:_Decal1ChannelSeparationEnable==1}", Int) = 0
+		_Decal1ChannelSeparation ("Intensity", Float) = 0
+		_Decal1ChannelSeparationAngleStrength ("Surface Angle Intensity", Float) = 0
+		_Decal1ChannelSeparationHue ("Hue", Range(-1, 1)) = 0
+		_Decal1ChannelSeparationVertical ("Direction", Range(-3.142, 3.142)) = 0
+		[ToggleUI]_Decal1ChannelSeparationPremultiply ("Premultiply Alpha--{tooltip:''Fixes channel separation issues on some decal textures''}", Float) = 0
+		[HideInInspector] g_end_Decal1ChannelSeparation ("", Int) = 0
+		[HideInInspector] m_start_Decal1AudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1ScaleBand ("Scale Band", Int) = 0
+		[VectorLabel(Xmin, Ymin, Xmax, Ymax)]_AudioLinkDecal1Scale ("Scale Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1SideBand ("Side Band", Int) = 0
+		[VectorLabel(L, R, D, U)]_AudioLinkDecal1SideMin ("Side Mod Min", Vector) = (0, 0, 0, 0)
+		[VectorLabel(L, R, D, U)]_AudioLinkDecal1SideMax ("Side Mod Max", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1RotationBand ("Rotation Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal1Rotation ("Rotation Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1AlphaBand ("Alpha Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal1Alpha ("Alpha Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1EmissionBand ("Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal1Emission ("Emission Mod", Vector) = (0, 0, 0, 0)
+		[ToggleUI]_AudioLinkDecalCC1 ("CC Strip", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _DecalRotationCTALBand1 ("Chrono Rotation Band", Int) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_DecalRotationCTALType1 ("Chrono Motion Type", Int) = 0
+		_DecalRotationCTALSpeed1 ("Chrono Rotation Speed", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal1ChannelSeparationBand ("Channel Separation Band--{condition_showS:(_Decal1ChannelSeparationEnable==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal1ChannelSeparation ("Channel Separation--{condition_showS:(_Decal1ChannelSeparationEnable==1)}", Vector) = (0, 0, 0, 0)
+		[HideInInspector] m_end_Decal1AudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_Decal1 ("Decal 0", Float) = 0
+		[HideInInspector] m_start_Decal2 ("Decal 2--{reference_property:_DecalEnabled2}", Float) = 0
+		[HideInInspector][ThryToggle(GEOM_TYPE_FROND)]_DecalEnabled2 ("Enable", Float) = 0
+		[Enum(R, 0, G, 1, B, 2, A, 3)] _Decal2MaskChannel ("Mask Channel", Int) = 2
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal2GlobalMask ("Global Mask--{reference_property:_Decal2GlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_Decal2GlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		_DecalColor2 ("Color--{reference_property:_DecalColor2ThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _DecalColor2ThemeIndex ("", Int) = 0
+		_DecalEmissionStrength2 ("Emission Strength", Range(0, 20)) = 0
+		[sRGBWarning(true)]_DecalTexture2 ("Decal--{reference_properties:[_DecalTexture2Pan, _DecalTexture2UV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_DecalTexture2Pan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _DecalTexture2UV ("UV", Int) = 0
+		[ToggleUI]_DecalTiled2 ("Tiled", Float) = 0
+		_Decal2Depth ("Depth", Float) = 0
+		[Vector2]_DecalScale2 ("Scale", Vector) = (1, 1, 0, 0)
+		[VectorLabel(L, R, D, U)]_DecalSideOffset2 ("Side Offset", Vector) = (0, 0, 0, 0)
+		[Vector2]_DecalPosition2 ("Position", Vector) = (.5, .5, 0, 0)
+		_DecalRotation2 ("Rotation", Range(0, 360)) = 0
+		_DecalRotationSpeed2 ("Rotation Speed", Float) = 0
+		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType2 ("Blending", Range(0, 1)) = 0
+		_DecalBlendAlpha2_Windows112D2 ("Alpha", Range(0, 1)) = 1
+		[ToggleUI]_DecalOverrideAlpha2 ("Override Alpha", Float) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal2ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal2ApplyGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal2ApplyGlobalMaskBlendType ("Blending", Int) = 0
+		[ThryToggleUI(true)]_DecalHueShiftEnabled2 ("<size=13><b>Hue Shift</b></size>", Float) = 0
+		_DecalHueShiftSpeed2 ("Shift Speed--{condition_showS:(_DecalHueShiftEnabled2==1)}", Float) = 0
+		_DecalHueShift2 ("Hue Shift--{condition_showS:(_DecalHueShiftEnabled2==1)}", Range(0, 1)) = 0
+		_Decal2HueAngleStrength ("Hue Angle Power--{condition_showS:(_DecalHueShiftEnabled2==1)}", Float) = 0
+		[NoAnimate][ThryToggle(true)]_Decal2ChannelSeparationEnable ("<size=13><b>  Channel Separation</b></size>", Float) = 0
+		[HideInInspector] g_start_Decal2ChannelSeparation ("--{condition_showS:_Decal2ChannelSeparationEnable==1}", Int) = 0
+		_Decal2ChannelSeparation ("Intensity", Float) = 0
+		_Decal2ChannelSeparationAngleStrength ("Surface Angle Intensity", Float) = 0
+		_Decal2ChannelSeparationHue ("Hue", Range(-1, 1)) = 0
+		_Decal2ChannelSeparationVertical ("Direction", Range(-3.142, 3.142)) = 0
+		[ToggleUI]_Decal2ChannelSeparationPremultiply ("Premultiply Alpha--{tooltip:''Fixes channel separation issues on some decal textures''}", Float) = 0
+		[HideInInspector] g_end_Decal2ChannelSeparation ("", Int) = 0
+		[HideInInspector] m_start_Decal2AudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2ScaleBand ("Scale Band", Int) = 0
+		[VectorLabel(Xmin, Ymin, Xmax, Ymax)]_AudioLinkDecal2Scale ("Scale Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2SideBand ("Side Band", Int) = 0
+		[VectorLabel(L, R, U, D)]_AudioLinkDecal2SideMin ("Side Mod Min", Vector) = (0, 0, 0, 0)
+		[VectorLabel(L, R, U, D)]_AudioLinkDecal2SideMax ("Side Mod Max", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2RotationBand ("Rotation Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal2Rotation ("Rotation Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2AlphaBand ("Alpha Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal2Alpha ("Alpha Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2EmissionBand ("Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal2Emission ("Emission Mod", Vector) = (0, 0, 0, 0)
+		[ToggleUI]_AudioLinkDecalCC2 ("CC Strip", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _DecalRotationCTALBand2 ("Chrono Rotation Band", Int) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_DecalRotationCTALType2 ("Chrono Motion Type", Int) = 0
+		_DecalRotationCTALSpeed2 ("Chrono Rotation Speed", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal2ChannelSeparationBand ("Channel Separation Band--{condition_showS:(_Decal2ChannelSeparationEnable==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal2ChannelSeparation ("Channel Separation--{condition_showS:(_Decal2ChannelSeparationEnable==1)}", Vector) = (0, 0, 0, 0)
+		[HideInInspector] m_end_Decal2AudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_Decal2 ("Decal 0", Float) = 0
+		[HideInInspector] m_start_Decal3 ("Decal 3--{reference_property:_DecalEnabled3}", Float) = 0
+		[HideInInspector][ThryToggle(DEPTH_OF_FIELD_COC_VIEW)]_DecalEnabled3 ("Enable", Float) = 0
+		[Enum(R, 0, G, 1, B, 2, A, 3)] _Decal3MaskChannel ("Mask Channel", Int) = 3
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal3GlobalMask ("Global Mask--{reference_property:_Decal3GlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_Decal3GlobalMaskBlendType ("Blending", Range(0, 1)) = 2
+		_DecalColor3 ("Color--{reference_property:_DecalColor3ThemeIndex}", Color) = (1, 1, 1, 1)
+		[HideInInspector][ThryWideEnum(Off, 0, Theme Color 0, 1, Theme Color 1, 2, Theme Color 2, 3, Theme Color 3, 4, ColorChord 0, 5, ColorChord 1, 6, ColorChord 2, 7, ColorChord 3, 8, AL Theme 0, 9, AL Theme 1, 10, AL Theme 2, 11, AL Theme 3, 12)] _DecalColor3ThemeIndex ("", Int) = 0
+		_DecalEmissionStrength3 ("Emission Strength", Range(0, 20)) = 0
+		[sRGBWarning(true)]_DecalTexture3 ("Decal--{reference_properties:[_DecalTexture3Pan, _DecalTexture3UV]}", 2D) = "white" { }
+		[HideInInspector][Vector2]_DecalTexture3Pan ("Panning", Vector) = (0, 0, 0, 0)
+		[HideInInspector][ThryWideEnum(UV0, 0, UV1, 1, UV2, 2, UV3, 3, Panosphere, 4, World Pos, 5, Local Pos, 8, Polar UV, 6, Distorted UV, 7)] _DecalTexture3UV ("UV", Int) = 0
+		[ToggleUI]_DecalTiled3 ("Tiled", Float) = 0
+		_Decal3Depth ("Depth", Float) = 0
+		[Vector2]_DecalScale3 ("Scale", Vector) = (1, 1, 0, 0)
+		[VectorLabel(L, R, D, U)]_DecalSideOffset3 ("Side Offset", Vector) = (0, 0, 0, 0)
+		[Vector2]_DecalPosition3 ("Position", Vector) = (.5, .5, 0, 0)
+		_DecalRotation3 ("Rotation", Range(0, 360)) = 0
+		_DecalRotationSpeed3 ("Rotation Speed", Float) = 0
+		[ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)]_DecalBlendType3 ("Blending", Range(0, 1)) = 0
+		_DecalBlendAlpha3_Windows112D2 ("Alpha", Range(0, 1)) = 1
+		[ToggleUI]_DecalOverrideAlpha3 ("Override Alpha", Float) = 0
+		[ThryWideEnum(Off, 0, 1R, 1, 1G, 2, 1B, 3, 1A, 4, 2R, 5, 2G, 6, 2B, 7, 2A, 8, 3R, 9, 3G, 10, 3B, 11, 3A, 12, 4R, 13, 4G, 14, 4B, 15, 4A, 16)] _Decal3ApplyGlobalMaskIndex ("Apply to Global Mask--{reference_property:_Decal3ApplyGlobalMaskBlendType}", Int) = 0
+		[HideInInspector][ThryWideEnum(Replace, 0, Multiply, 2, Screen, 6, Linear Dodge(Add), 8, Overlay, 9, Mixed, 20)] _Decal3ApplyGlobalMaskBlendType ("Blending", Int) = 0
+		[ThryToggleUI(true)]_DecalHueShiftEnabled3 ("<size=13><b>Hue Shift</b></size>", Float) = 0
+		_DecalHueShiftSpeed3 ("Shift Speed--{condition_showS:(_DecalHueShiftEnabled3==1)}", Float) = 0
+		_DecalHueShift3 ("Hue Shift--{condition_showS:(_DecalHueShiftEnabled3==1)}", Range(0, 1)) = 0
+		_Decal3HueAngleStrength ("Hue Angle Power--{condition_showS:(_DecalHueShiftEnabled3==1)}", Float) = 0
+		[NoAnimate][ThryToggle(true)]_Decal3ChannelSeparationEnable ("<size=13><b>  Channel Separation</b></size>", Float) = 0
+		[HideInInspector] g_start_Decal3ChannelSeparation ("--{condition_showS:_Decal3ChannelSeparationEnable==1}", Int) = 0
+		_Decal3ChannelSeparation ("Intensity", Float) = 0
+		_Decal3ChannelSeparationAngleStrength ("Surface Angle Intensity", Float) = 0
+		_Decal3ChannelSeparationHue ("Hue", Range(-1, 1)) = 0
+		_Decal3ChannelSeparationVertical ("Direction", Range(-3.142, 3.142)) = 0
+		[ToggleUI]_Decal3ChannelSeparationPremultiply ("Premultiply Alpha--{tooltip:''Fixes channel separation issues on some decal textures''}", Float) = 0
+		[HideInInspector] g_end_Decal3ChannelSeparation ("", Int) = 0
+		[HideInInspector] m_start_Decal3AudioLink ("Audio Link ♫--{ condition_showS:_EnableAudioLink==1}", Float) = 0
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3ScaleBand ("Scale Band", Int) = 0
+		[VectorLabel(Xmin, Ymin, Xmax, Ymax)]_AudioLinkDecal3Scale ("Scale Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3SideBand ("Side Band", Int) = 0
+		[VectorLabel(L, R, U, D)]_AudioLinkDecal3SideMin ("Side Mod Min", Vector) = (0, 0, 0, 0)
+		[VectorLabel(L, R, U, D)]_AudioLinkDecal3SideMax ("Side Mod Max", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3RotationBand ("Rotation Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal3Rotation ("Rotation Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3AlphaBand ("Alpha Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal3Alpha ("Alpha Mod", Vector) = (0, 0, 0, 0)
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3EmissionBand ("Emission Band", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal3Emission ("Emission Mod", Vector) = (0, 0, 0, 0)
+		[ToggleUI]_AudioLinkDecalCC3 ("CC Strip", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _DecalRotationCTALBand3 ("Chrono Rotation Band", Int) = 0
+		[ThryWideEnum(Motion increases as intensity of band increases, 0, Above but Smooth, 1, Motion moves back and forth as a function of intensity, 2, Above but Smoooth, 3, Fixed speed increase when the band is dark Stationary when light, 4, Above but Smooooth, 5, Fixed speed increase when the band is dark Fixed speed decrease when light, 6, Above but Smoooooth, 7)]_DecalRotationCTALType3 ("Chrono Motion Type", Int) = 0
+		_DecalRotationCTALSpeed3 ("Chrono Rotation Speed", Float) = 0
+		[Space(7)]
+		[Enum(Bass, 0, Low Mid, 1, High Mid, 2, Treble, 3)] _AudioLinkDecal3ChannelSeparationBand ("Channel Separation Band--{condition_showS:(_Decal3ChannelSeparationEnable==1)}", Int) = 0
+		[VectorLabel(Min, Max)]_AudioLinkDecal3ChannelSeparation ("Channel Separation--{condition_showS:(_Decal3ChannelSeparationEnable==1)}", Vector) = (0, 0, 0, 0)
+		[HideInInspector] m_end_Decal3AudioLink ("Audio Link", Float) = 0
+		[HideInInspector] m_end_Decal3 ("Decal 0", Float) = 0
 		[HideInInspector] m_end_DecalSection ("Decal", Float) = 0
 		[HideInInspector] m_start_GlobalThemes ("Global Themes--{button_help:{text:Tutorial,action:{type:URL,data:https://www.poiyomi.com/color-and-normals/global-themes},hover:Documentation}}", Float) = 0
 		[HideInInspector] m_start_GlobalThemeColor0 ("Theme Color 0", Float) = 0
@@ -496,11 +740,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define DEPTH_OF_FIELD_COC_VIEW 
+ #define GEOM_TYPE_BRANCH 
+ #define GEOM_TYPE_BRANCH_DETAIL 
+ #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define _SUNDISK_SIMPLE 
+ #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
  #define PROP_GLITTERMASK 
@@ -691,6 +940,231 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#if defined(PROP_DECALMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _DecalMask;
+			float4 _DecalMask_ST;
+			float2 _DecalMaskPan;
+			float _DecalMaskUV;
+			#endif
+			float _DecalTPSDepthMaskEnabled;
+			float _Decal0TPSMaskStrength;
+			float _Decal1TPSMaskStrength;
+			float _Decal2TPSMaskStrength;
+			float _Decal3TPSMaskStrength;
+			#ifdef POI_AUDIOLINK
+			#ifdef GEOM_TYPE_BRANCH
+			half _AudioLinkDecal0ScaleBand;
+			float4 _AudioLinkDecal0Scale;
+			half _AudioLinkDecal0RotationBand;
+			float2 _AudioLinkDecal0Rotation;
+			half _AudioLinkDecal0AlphaBand;
+			float2 _AudioLinkDecal0Alpha;
+			half _AudioLinkDecal0EmissionBand;
+			float2 _AudioLinkDecal0Emission;
+			float _DecalRotationCTALBand0;
+			float _DecalRotationCTALSpeed0;
+			float _DecalRotationCTALType0;
+			float _AudioLinkDecalCC0;
+			float _AudioLinkDecal0SideBand;
+			float4 _AudioLinkDecal0SideMin;
+			float4 _AudioLinkDecal0SideMax;
+			float2 _AudioLinkDecal0ChannelSeparation;
+			float _AudioLinkDecal0ChannelSeparationBand;
+			#endif //GEOM_TYPE_BRANCH
+			#ifdef GEOM_TYPE_BRANCH_DETAIL
+			half _AudioLinkDecal1ScaleBand;
+			float4 _AudioLinkDecal1Scale;
+			half _AudioLinkDecal1RotationBand;
+			float2 _AudioLinkDecal1Rotation;
+			half _AudioLinkDecal1AlphaBand;
+			float2 _AudioLinkDecal1Alpha;
+			half _AudioLinkDecal1EmissionBand;
+			float2 _AudioLinkDecal1Emission;
+			float _DecalRotationCTALBand1;
+			float _DecalRotationCTALSpeed1;
+			float _DecalRotationCTALType1;
+			float _AudioLinkDecalCC1;
+			float _AudioLinkDecal1SideBand;
+			float4 _AudioLinkDecal1SideMin;
+			float4 _AudioLinkDecal1SideMax;
+			float2 _AudioLinkDecal1ChannelSeparation;
+			float _AudioLinkDecal1ChannelSeparationBand;
+			#endif //GEOM_TYPE_BRANCH_DETAIL
+			#ifdef GEOM_TYPE_FROND
+			half _AudioLinkDecal2ScaleBand;
+			float4 _AudioLinkDecal2Scale;
+			half _AudioLinkDecal2RotationBand;
+			float2 _AudioLinkDecal2Rotation;
+			half _AudioLinkDecal2AlphaBand;
+			float2 _AudioLinkDecal2Alpha;
+			half _AudioLinkDecal2EmissionBand;
+			float2 _AudioLinkDecal2Emission;
+			float _DecalRotationCTALBand2;
+			float _DecalRotationCTALSpeed2;
+			float _DecalRotationCTALType2;
+			float _AudioLinkDecalCC2;
+			float _AudioLinkDecal2SideBand;
+			float4 _AudioLinkDecal2SideMin;
+			float4 _AudioLinkDecal2SideMax;
+			float2 _AudioLinkDecal2ChannelSeparation;
+			float _AudioLinkDecal2ChannelSeparationBand;
+			#endif //GEOM_TYPE_FROND
+			#ifdef DEPTH_OF_FIELD_COC_VIEW
+			half _AudioLinkDecal3ScaleBand;
+			float4 _AudioLinkDecal3Scale;
+			half _AudioLinkDecal3RotationBand;
+			float2 _AudioLinkDecal3Rotation;
+			half _AudioLinkDecal3AlphaBand;
+			float2 _AudioLinkDecal3Alpha;
+			half _AudioLinkDecal3EmissionBand;
+			float2 _AudioLinkDecal3Emission;
+			float _DecalRotationCTALBand3;
+			float _DecalRotationCTALSpeed3;
+			float _DecalRotationCTALType3;
+			float _AudioLinkDecalCC3;
+			float _AudioLinkDecal3SideBand;
+			float4 _AudioLinkDecal3SideMin;
+			float4 _AudioLinkDecal3SideMax;
+			float2 _AudioLinkDecal3ChannelSeparation;
+			float _AudioLinkDecal3ChannelSeparationBand;
+			#endif //DEPTH_OF_FIELD_COC_VIEW
+			#endif
+			#ifdef GEOM_TYPE_BRANCH
+			sampler2D _DecalTexture;
+			float  _Decal0MaskChannel;
+			float  _Decal0GlobalMask;
+			float  _Decal0GlobalMaskBlendType;
+			float  _Decal0ApplyGlobalMaskIndex;
+			float  _Decal0ApplyGlobalMaskBlendType;
+			float4 _DecalTexture_ST;
+			float2 _DecalTexturePan;
+			float  _DecalTextureUV;
+			float4 _DecalColor;
+			float  _DecalColorThemeIndex;
+			float  _DecalTiled;
+			float  _DecalBlendType;
+			half   _DecalRotation;
+			half2  _DecalScale;
+			float4 _DecalSideOffset;
+			half2  _DecalPosition;
+			half   _DecalRotationSpeed;
+			float  _DecalEmissionStrength;
+			float  _DecalBlendAlpha_Windows112D2;
+			float  _DecalOverrideAlpha;
+			float  _DecalHueShiftEnabled;
+			float  _DecalHueShift;
+			float  _DecalHueShiftSpeed;
+			float  _Decal0Depth;
+			float  _Decal0HueAngleStrength;
+			float  _Decal0ChannelSeparationEnable;
+			float  _Decal0ChannelSeparation;
+			float  _Decal0ChannelSeparationPremultiply;
+			float  _Decal0ChannelSeparationHue;
+			float  _Decal0ChannelSeparationVertical;
+			float  _Decal0ChannelSeparationAngleStrength;
+			#endif
+			#ifdef GEOM_TYPE_BRANCH_DETAIL
+			sampler2D _DecalTexture1;
+			float _Decal1MaskChannel;
+			float _Decal1GlobalMask;
+			float _Decal1GlobalMaskBlendType;
+			float _Decal1ApplyGlobalMaskIndex;
+			float _Decal1ApplyGlobalMaskBlendType;
+			float4 _DecalTexture1_ST;
+			float2 _DecalTexture1Pan;
+			float _DecalTexture1UV;
+			float4 _DecalColor1;
+			float _DecalColor1ThemeIndex;
+			fixed _DecalTiled1;
+			float _DecalBlendType1;
+			half _DecalRotation1;
+			half2 _DecalScale1;
+			float4 _DecalSideOffset1;
+			half2 _DecalPosition1;
+			half _DecalRotationSpeed1;
+			float _DecalEmissionStrength1;
+			float _DecalBlendAlpha1_Windows112D2;
+			float _DecalOverrideAlpha1;
+			float _DecalHueShiftEnabled1;
+			float _DecalHueShift1;
+			float _DecalHueShiftSpeed1;
+			float _Decal1Depth;
+			float _Decal1HueAngleStrength;
+			float _Decal1ChannelSeparationEnable;
+			float _Decal1ChannelSeparation;
+			float _Decal1ChannelSeparationPremultiply;
+			float _Decal1ChannelSeparationHue;
+			float _Decal1ChannelSeparationVertical;
+			float _Decal1ChannelSeparationAngleStrength;
+			#endif
+			#ifdef GEOM_TYPE_FROND
+			sampler2D _DecalTexture2;
+			float _Decal2MaskChannel;
+			float _Decal2GlobalMask;
+			float _Decal2GlobalMaskBlendType;
+			float _Decal2ApplyGlobalMaskIndex;
+			float _Decal2ApplyGlobalMaskBlendType;
+			float4 _DecalTexture2_ST;
+			float2 _DecalTexture2Pan;
+			float _DecalTexture2UV;
+			float4 _DecalColor2;
+			float _DecalColor2ThemeIndex;
+			fixed _DecalTiled2;
+			float _DecalBlendType2;
+			half _DecalRotation2;
+			half2 _DecalScale2;
+			float4 _DecalSideOffset2;
+			half2 _DecalPosition2;
+			half _DecalRotationSpeed2;
+			float _DecalEmissionStrength2;
+			float _DecalBlendAlpha2_Windows112D2;
+			float _DecalOverrideAlpha2;
+			float _DecalHueShiftEnabled2;
+			float _DecalHueShift2;
+			float _DecalHueShiftSpeed2;
+			float _Decal2Depth;
+			float _Decal2HueAngleStrength;
+			float _Decal2ChannelSeparationEnable;
+			float _Decal2ChannelSeparation;
+			float _Decal2ChannelSeparationPremultiply;
+			float _Decal2ChannelSeparationHue;
+			float _Decal2ChannelSeparationVertical;
+			float _Decal2ChannelSeparationAngleStrength;
+			#endif
+			#ifdef DEPTH_OF_FIELD_COC_VIEW
+			sampler2D _DecalTexture3;
+			float _Decal3MaskChannel;
+			float _Decal3GlobalMask;
+			float _Decal3GlobalMaskBlendType;
+			float _Decal3ApplyGlobalMaskIndex;
+			float _Decal3ApplyGlobalMaskBlendType;
+			float4 _DecalTexture3_ST;
+			float2 _DecalTexture3Pan;
+			float _DecalTexture3UV;
+			float4 _DecalColor3;
+			float _DecalColor3ThemeIndex;
+			fixed _DecalTiled3;
+			float _DecalBlendType3;
+			half _DecalRotation3;
+			half2 _DecalScale3;
+			float4 _DecalSideOffset3;
+			half2 _DecalPosition3;
+			half _DecalRotationSpeed3;
+			float _DecalEmissionStrength3;
+			float _DecalBlendAlpha3_Windows112D2;
+			float _DecalOverrideAlpha3;
+			float _DecalHueShiftEnabled3;
+			float _DecalHueShift3;
+			float _DecalHueShiftSpeed3;
+			float _Decal3Depth;
+			float _Decal3HueAngleStrength;
+			float _Decal3ChannelSeparationEnable;
+			float _Decal3ChannelSeparation;
+			float _Decal3ChannelSeparationPremultiply;
+			float _Decal3ChannelSeparationHue;
+			float _Decal3ChannelSeparationVertical;
+			float _Decal3ChannelSeparationAngleStrength;
+			#endif
 			float _ShadowOffset;
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
@@ -2407,6 +2881,266 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 				#endif
 				float4 decalColor = 1;
 				float2 uv = 0;
+				#ifdef GEOM_TYPE_BRANCH
+				PoiDecal Decal0;
+				PoiInitStruct(PoiDecal, Decal0)
+				Decal0.m_DecalMaskChannel 					 = (0.0 /*_Decal0MaskChannel*/);
+				Decal0.m_DecalGlobalMask 					 = (0.0 /*_Decal0GlobalMask*/);
+				Decal0.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal0GlobalMaskBlendType*/);
+				Decal0.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal0ApplyGlobalMaskIndex*/);
+				Decal0.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal0ApplyGlobalMaskBlendType*/);
+				Decal0.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal0.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal0.m_DecalTextureUV 					 = (0.0 /*_DecalTextureUV*/);
+				Decal0.m_DecalColor 						 = float4(1,1,1,1);
+				Decal0.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColorThemeIndex*/);
+				Decal0.m_DecalTiled 						 = (0.0 /*_DecalTiled*/);
+				Decal0.m_DecalBlendType 					 = (0.0 /*_DecalBlendType*/);
+				Decal0.m_DecalRotation 						 = (0.0 /*_DecalRotation*/);
+				Decal0.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal0.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal0.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal0.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed*/);
+				Decal0.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength*/);
+				Decal0.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha_Windows112D2;
+				Decal0.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha*/);
+				Decal0.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled*/);
+				Decal0.m_DecalHueShift 						 = (0.0 /*_DecalHueShift*/);
+				Decal0.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed*/);
+				Decal0.m_DecalDepth 						 = (0.0 /*_Decal0Depth*/);
+				Decal0.m_DecalHueAngleStrength 				 = (0.0 /*_Decal0HueAngleStrength*/);
+				Decal0.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal0ChannelSeparationEnable*/);
+				Decal0.m_DecalChannelSeparation 			 = (0.0 /*_Decal0ChannelSeparation*/);
+				Decal0.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal0ChannelSeparationPremultiply*/);
+				Decal0.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal0ChannelSeparationHue*/);
+				Decal0.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal0ChannelSeparationVertical*/);
+				Decal0.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal0ChannelSeparationAngleStrength*/);
+				Decal0.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal0.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal0ScaleBand*/);
+				Decal0.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal0RotationBand*/);
+				Decal0.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal0AlphaBand*/);
+				Decal0.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal0EmissionBand*/);
+				Decal0.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal0.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand0*/);
+				Decal0.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed0*/);
+				Decal0.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType0*/);
+				Decal0.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC0*/);
+				Decal0.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal0SideBand*/);
+				Decal0.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal0ChannelSeparationBand*/);
+				Decal0.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal0ChannelSeparationEnable*/))
+				{
+					Decal0.SampleDecal(_DecalTexture, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal0.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal0.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef GEOM_TYPE_BRANCH_DETAIL
+				PoiDecal Decal1;
+				PoiInitStruct(PoiDecal, Decal1)
+				Decal1.m_DecalMaskChannel 					 = (0.0 /*_Decal1MaskChannel*/);
+				Decal1.m_DecalGlobalMask 					 = (0.0 /*_Decal1GlobalMask*/);
+				Decal1.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal1GlobalMaskBlendType*/);
+				Decal1.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal1ApplyGlobalMaskIndex*/);
+				Decal1.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal1ApplyGlobalMaskBlendType*/);
+				Decal1.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal1.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal1.m_DecalTextureUV 					 = (0.0 /*_DecalTexture1UV*/);
+				Decal1.m_DecalColor 						 = float4(1,1,1,1);
+				Decal1.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor1ThemeIndex*/);
+				Decal1.m_DecalTiled 						 = (0.0 /*_DecalTiled1*/);
+				Decal1.m_DecalBlendType 					 = (0.0 /*_DecalBlendType1*/);
+				Decal1.m_DecalRotation 						 = (0.0 /*_DecalRotation1*/);
+				Decal1.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal1.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal1.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal1.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed1*/);
+				Decal1.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength1*/);
+				Decal1.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha1_Windows112D2;
+				Decal1.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha1*/);
+				Decal1.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled1*/);
+				Decal1.m_DecalHueShift 						 = (0.0 /*_DecalHueShift1*/);
+				Decal1.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed1*/);
+				Decal1.m_DecalDepth 						 = (0.0 /*_Decal1Depth*/);
+				Decal1.m_DecalHueAngleStrength 				 = (0.0 /*_Decal1HueAngleStrength*/);
+				Decal1.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal1ChannelSeparationEnable*/);
+				Decal1.m_DecalChannelSeparation 			 = (0.0 /*_Decal1ChannelSeparation*/);
+				Decal1.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal1ChannelSeparationPremultiply*/);
+				Decal1.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal1ChannelSeparationHue*/);
+				Decal1.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal1ChannelSeparationVertical*/);
+				Decal1.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal1ChannelSeparationAngleStrength*/);
+				Decal1.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal1.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal1ScaleBand*/);
+				Decal1.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal1RotationBand*/);
+				Decal1.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal1AlphaBand*/);
+				Decal1.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal1EmissionBand*/);
+				Decal1.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal1.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand1*/);
+				Decal1.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed1*/);
+				Decal1.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType1*/);
+				Decal1.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC1*/);
+				Decal1.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal1SideBand*/);
+				Decal1.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal1ChannelSeparationBand*/);
+				Decal1.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE1) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal1ChannelSeparationEnable*/))
+				{
+					Decal1.SampleDecal(_DecalTexture1, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal1.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal1.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef GEOM_TYPE_FROND
+				PoiDecal Decal2;
+				PoiInitStruct(PoiDecal, Decal2)
+				Decal2.m_DecalMaskChannel 					 = (0.0 /*_Decal2MaskChannel*/);
+				Decal2.m_DecalGlobalMask 					 = (0.0 /*_Decal2GlobalMask*/);
+				Decal2.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal2GlobalMaskBlendType*/);
+				Decal2.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal2ApplyGlobalMaskIndex*/);
+				Decal2.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal2ApplyGlobalMaskBlendType*/);
+				Decal2.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal2.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal2.m_DecalTextureUV 					 = (0.0 /*_DecalTexture2UV*/);
+				Decal2.m_DecalColor 						 = float4(1,1,1,1);
+				Decal2.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor2ThemeIndex*/);
+				Decal2.m_DecalTiled 						 = (0.0 /*_DecalTiled2*/);
+				Decal2.m_DecalBlendType 					 = (0.0 /*_DecalBlendType2*/);
+				Decal2.m_DecalRotation 						 = (0.0 /*_DecalRotation2*/);
+				Decal2.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal2.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal2.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal2.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed2*/);
+				Decal2.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength2*/);
+				Decal2.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha2_Windows112D2;
+				Decal2.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha2*/);
+				Decal2.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled2*/);
+				Decal2.m_DecalHueShift 						 = (0.0 /*_DecalHueShift2*/);
+				Decal2.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed2*/);
+				Decal2.m_DecalDepth 						 = (0.0 /*_Decal2Depth*/);
+				Decal2.m_DecalHueAngleStrength 				 = (0.0 /*_Decal2HueAngleStrength*/);
+				Decal2.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal2ChannelSeparationEnable*/);
+				Decal2.m_DecalChannelSeparation 			 = (0.0 /*_Decal2ChannelSeparation*/);
+				Decal2.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal2ChannelSeparationPremultiply*/);
+				Decal2.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal2ChannelSeparationHue*/);
+				Decal2.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal2ChannelSeparationVertical*/);
+				Decal2.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal2ChannelSeparationAngleStrength*/);
+				Decal2.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal2.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal2ScaleBand*/);
+				Decal2.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal2RotationBand*/);
+				Decal2.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal2AlphaBand*/);
+				Decal2.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal2EmissionBand*/);
+				Decal2.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal2.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand2*/);
+				Decal2.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed2*/);
+				Decal2.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType2*/);
+				Decal2.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC2*/);
+				Decal2.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal2SideBand*/);
+				Decal2.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal2ChannelSeparationBand*/);
+				Decal2.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE2) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal2ChannelSeparationEnable*/))
+				{
+					Decal2.SampleDecal(_DecalTexture2, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal2.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal2.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef DEPTH_OF_FIELD_COC_VIEW
+				PoiDecal Decal3;
+				PoiInitStruct(PoiDecal, Decal3)
+				Decal3.m_DecalMaskChannel 					 = (0.0 /*_Decal3MaskChannel*/);
+				Decal3.m_DecalGlobalMask 					 = (0.0 /*_Decal3GlobalMask*/);
+				Decal3.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal3GlobalMaskBlendType*/);
+				Decal3.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal3ApplyGlobalMaskIndex*/);
+				Decal3.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal3ApplyGlobalMaskBlendType*/);
+				Decal3.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal3.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal3.m_DecalTextureUV 					 = (0.0 /*_DecalTexture3UV*/);
+				Decal3.m_DecalColor 						 = float4(1,1,1,1);
+				Decal3.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor3ThemeIndex*/);
+				Decal3.m_DecalTiled 						 = (0.0 /*_DecalTiled3*/);
+				Decal3.m_DecalBlendType 					 = (0.0 /*_DecalBlendType3*/);
+				Decal3.m_DecalRotation 						 = (0.0 /*_DecalRotation3*/);
+				Decal3.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal3.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal3.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal3.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed3*/);
+				Decal3.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength3*/);
+				Decal3.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha3_Windows112D2;
+				Decal3.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha3*/);
+				Decal3.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled3*/);
+				Decal3.m_DecalHueShift 						 = (0.0 /*_DecalHueShift3*/);
+				Decal3.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed3*/);
+				Decal3.m_DecalDepth 						 = (0.0 /*_Decal3Depth*/);
+				Decal3.m_DecalHueAngleStrength 				 = (0.0 /*_Decal3HueAngleStrength*/);
+				Decal3.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal3ChannelSeparationEnable*/);
+				Decal3.m_DecalChannelSeparation 			 = (0.0 /*_Decal3ChannelSeparation*/);
+				Decal3.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal3ChannelSeparationPremultiply*/);
+				Decal3.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal3ChannelSeparationHue*/);
+				Decal3.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal3ChannelSeparationVertical*/);
+				Decal3.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal3ChannelSeparationAngleStrength*/);
+				Decal3.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal3.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal3ScaleBand*/);
+				Decal3.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal3RotationBand*/);
+				Decal3.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal3AlphaBand*/);
+				Decal3.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal3EmissionBand*/);
+				Decal3.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal3.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand3*/);
+				Decal3.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed3*/);
+				Decal3.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType3*/);
+				Decal3.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC3*/);
+				Decal3.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal3SideBand*/);
+				Decal3.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal3ChannelSeparationBand*/);
+				Decal3.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE3) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal3ChannelSeparationEnable*/))
+				{
+					Decal3.SampleDecal(_DecalTexture3, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal3.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal3.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
 				if (alphaOverride)
 				{
 					poiFragData.alpha *= decalAlpha;
@@ -3388,11 +4122,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 			BlendOp [_AddBlendOp], [_AddBlendOpAlpha]
 			Blend [_AddSrcBlend] [_AddDstBlend], [_AddSrcBlendAlpha] [_AddDstBlendAlpha]
 			CGPROGRAM
+ #define DEPTH_OF_FIELD_COC_VIEW 
+ #define GEOM_TYPE_BRANCH 
+ #define GEOM_TYPE_BRANCH_DETAIL 
+ #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define _SUNDISK_SIMPLE 
+ #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
  #define PROP_GLITTERMASK 
@@ -3582,6 +4321,231 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 			float _UVModWorldPos1;
 			float _UVModLocalPos0;
 			float _UVModLocalPos1;
+			#if defined(PROP_DECALMASK) || !defined(OPTIMIZER_ENABLED)
+			Texture2D _DecalMask;
+			float4 _DecalMask_ST;
+			float2 _DecalMaskPan;
+			float _DecalMaskUV;
+			#endif
+			float _DecalTPSDepthMaskEnabled;
+			float _Decal0TPSMaskStrength;
+			float _Decal1TPSMaskStrength;
+			float _Decal2TPSMaskStrength;
+			float _Decal3TPSMaskStrength;
+			#ifdef POI_AUDIOLINK
+			#ifdef GEOM_TYPE_BRANCH
+			half _AudioLinkDecal0ScaleBand;
+			float4 _AudioLinkDecal0Scale;
+			half _AudioLinkDecal0RotationBand;
+			float2 _AudioLinkDecal0Rotation;
+			half _AudioLinkDecal0AlphaBand;
+			float2 _AudioLinkDecal0Alpha;
+			half _AudioLinkDecal0EmissionBand;
+			float2 _AudioLinkDecal0Emission;
+			float _DecalRotationCTALBand0;
+			float _DecalRotationCTALSpeed0;
+			float _DecalRotationCTALType0;
+			float _AudioLinkDecalCC0;
+			float _AudioLinkDecal0SideBand;
+			float4 _AudioLinkDecal0SideMin;
+			float4 _AudioLinkDecal0SideMax;
+			float2 _AudioLinkDecal0ChannelSeparation;
+			float _AudioLinkDecal0ChannelSeparationBand;
+			#endif //GEOM_TYPE_BRANCH
+			#ifdef GEOM_TYPE_BRANCH_DETAIL
+			half _AudioLinkDecal1ScaleBand;
+			float4 _AudioLinkDecal1Scale;
+			half _AudioLinkDecal1RotationBand;
+			float2 _AudioLinkDecal1Rotation;
+			half _AudioLinkDecal1AlphaBand;
+			float2 _AudioLinkDecal1Alpha;
+			half _AudioLinkDecal1EmissionBand;
+			float2 _AudioLinkDecal1Emission;
+			float _DecalRotationCTALBand1;
+			float _DecalRotationCTALSpeed1;
+			float _DecalRotationCTALType1;
+			float _AudioLinkDecalCC1;
+			float _AudioLinkDecal1SideBand;
+			float4 _AudioLinkDecal1SideMin;
+			float4 _AudioLinkDecal1SideMax;
+			float2 _AudioLinkDecal1ChannelSeparation;
+			float _AudioLinkDecal1ChannelSeparationBand;
+			#endif //GEOM_TYPE_BRANCH_DETAIL
+			#ifdef GEOM_TYPE_FROND
+			half _AudioLinkDecal2ScaleBand;
+			float4 _AudioLinkDecal2Scale;
+			half _AudioLinkDecal2RotationBand;
+			float2 _AudioLinkDecal2Rotation;
+			half _AudioLinkDecal2AlphaBand;
+			float2 _AudioLinkDecal2Alpha;
+			half _AudioLinkDecal2EmissionBand;
+			float2 _AudioLinkDecal2Emission;
+			float _DecalRotationCTALBand2;
+			float _DecalRotationCTALSpeed2;
+			float _DecalRotationCTALType2;
+			float _AudioLinkDecalCC2;
+			float _AudioLinkDecal2SideBand;
+			float4 _AudioLinkDecal2SideMin;
+			float4 _AudioLinkDecal2SideMax;
+			float2 _AudioLinkDecal2ChannelSeparation;
+			float _AudioLinkDecal2ChannelSeparationBand;
+			#endif //GEOM_TYPE_FROND
+			#ifdef DEPTH_OF_FIELD_COC_VIEW
+			half _AudioLinkDecal3ScaleBand;
+			float4 _AudioLinkDecal3Scale;
+			half _AudioLinkDecal3RotationBand;
+			float2 _AudioLinkDecal3Rotation;
+			half _AudioLinkDecal3AlphaBand;
+			float2 _AudioLinkDecal3Alpha;
+			half _AudioLinkDecal3EmissionBand;
+			float2 _AudioLinkDecal3Emission;
+			float _DecalRotationCTALBand3;
+			float _DecalRotationCTALSpeed3;
+			float _DecalRotationCTALType3;
+			float _AudioLinkDecalCC3;
+			float _AudioLinkDecal3SideBand;
+			float4 _AudioLinkDecal3SideMin;
+			float4 _AudioLinkDecal3SideMax;
+			float2 _AudioLinkDecal3ChannelSeparation;
+			float _AudioLinkDecal3ChannelSeparationBand;
+			#endif //DEPTH_OF_FIELD_COC_VIEW
+			#endif
+			#ifdef GEOM_TYPE_BRANCH
+			sampler2D _DecalTexture;
+			float  _Decal0MaskChannel;
+			float  _Decal0GlobalMask;
+			float  _Decal0GlobalMaskBlendType;
+			float  _Decal0ApplyGlobalMaskIndex;
+			float  _Decal0ApplyGlobalMaskBlendType;
+			float4 _DecalTexture_ST;
+			float2 _DecalTexturePan;
+			float  _DecalTextureUV;
+			float4 _DecalColor;
+			float  _DecalColorThemeIndex;
+			float  _DecalTiled;
+			float  _DecalBlendType;
+			half   _DecalRotation;
+			half2  _DecalScale;
+			float4 _DecalSideOffset;
+			half2  _DecalPosition;
+			half   _DecalRotationSpeed;
+			float  _DecalEmissionStrength;
+			float  _DecalBlendAlpha_Windows112D2;
+			float  _DecalOverrideAlpha;
+			float  _DecalHueShiftEnabled;
+			float  _DecalHueShift;
+			float  _DecalHueShiftSpeed;
+			float  _Decal0Depth;
+			float  _Decal0HueAngleStrength;
+			float  _Decal0ChannelSeparationEnable;
+			float  _Decal0ChannelSeparation;
+			float  _Decal0ChannelSeparationPremultiply;
+			float  _Decal0ChannelSeparationHue;
+			float  _Decal0ChannelSeparationVertical;
+			float  _Decal0ChannelSeparationAngleStrength;
+			#endif
+			#ifdef GEOM_TYPE_BRANCH_DETAIL
+			sampler2D _DecalTexture1;
+			float _Decal1MaskChannel;
+			float _Decal1GlobalMask;
+			float _Decal1GlobalMaskBlendType;
+			float _Decal1ApplyGlobalMaskIndex;
+			float _Decal1ApplyGlobalMaskBlendType;
+			float4 _DecalTexture1_ST;
+			float2 _DecalTexture1Pan;
+			float _DecalTexture1UV;
+			float4 _DecalColor1;
+			float _DecalColor1ThemeIndex;
+			fixed _DecalTiled1;
+			float _DecalBlendType1;
+			half _DecalRotation1;
+			half2 _DecalScale1;
+			float4 _DecalSideOffset1;
+			half2 _DecalPosition1;
+			half _DecalRotationSpeed1;
+			float _DecalEmissionStrength1;
+			float _DecalBlendAlpha1_Windows112D2;
+			float _DecalOverrideAlpha1;
+			float _DecalHueShiftEnabled1;
+			float _DecalHueShift1;
+			float _DecalHueShiftSpeed1;
+			float _Decal1Depth;
+			float _Decal1HueAngleStrength;
+			float _Decal1ChannelSeparationEnable;
+			float _Decal1ChannelSeparation;
+			float _Decal1ChannelSeparationPremultiply;
+			float _Decal1ChannelSeparationHue;
+			float _Decal1ChannelSeparationVertical;
+			float _Decal1ChannelSeparationAngleStrength;
+			#endif
+			#ifdef GEOM_TYPE_FROND
+			sampler2D _DecalTexture2;
+			float _Decal2MaskChannel;
+			float _Decal2GlobalMask;
+			float _Decal2GlobalMaskBlendType;
+			float _Decal2ApplyGlobalMaskIndex;
+			float _Decal2ApplyGlobalMaskBlendType;
+			float4 _DecalTexture2_ST;
+			float2 _DecalTexture2Pan;
+			float _DecalTexture2UV;
+			float4 _DecalColor2;
+			float _DecalColor2ThemeIndex;
+			fixed _DecalTiled2;
+			float _DecalBlendType2;
+			half _DecalRotation2;
+			half2 _DecalScale2;
+			float4 _DecalSideOffset2;
+			half2 _DecalPosition2;
+			half _DecalRotationSpeed2;
+			float _DecalEmissionStrength2;
+			float _DecalBlendAlpha2_Windows112D2;
+			float _DecalOverrideAlpha2;
+			float _DecalHueShiftEnabled2;
+			float _DecalHueShift2;
+			float _DecalHueShiftSpeed2;
+			float _Decal2Depth;
+			float _Decal2HueAngleStrength;
+			float _Decal2ChannelSeparationEnable;
+			float _Decal2ChannelSeparation;
+			float _Decal2ChannelSeparationPremultiply;
+			float _Decal2ChannelSeparationHue;
+			float _Decal2ChannelSeparationVertical;
+			float _Decal2ChannelSeparationAngleStrength;
+			#endif
+			#ifdef DEPTH_OF_FIELD_COC_VIEW
+			sampler2D _DecalTexture3;
+			float _Decal3MaskChannel;
+			float _Decal3GlobalMask;
+			float _Decal3GlobalMaskBlendType;
+			float _Decal3ApplyGlobalMaskIndex;
+			float _Decal3ApplyGlobalMaskBlendType;
+			float4 _DecalTexture3_ST;
+			float2 _DecalTexture3Pan;
+			float _DecalTexture3UV;
+			float4 _DecalColor3;
+			float _DecalColor3ThemeIndex;
+			fixed _DecalTiled3;
+			float _DecalBlendType3;
+			half _DecalRotation3;
+			half2 _DecalScale3;
+			float4 _DecalSideOffset3;
+			half2 _DecalPosition3;
+			half _DecalRotationSpeed3;
+			float _DecalEmissionStrength3;
+			float _DecalBlendAlpha3_Windows112D2;
+			float _DecalOverrideAlpha3;
+			float _DecalHueShiftEnabled3;
+			float _DecalHueShift3;
+			float _DecalHueShiftSpeed3;
+			float _Decal3Depth;
+			float _Decal3HueAngleStrength;
+			float _Decal3ChannelSeparationEnable;
+			float _Decal3ChannelSeparation;
+			float _Decal3ChannelSeparationPremultiply;
+			float _Decal3ChannelSeparationHue;
+			float _Decal3ChannelSeparationVertical;
+			float _Decal3ChannelSeparationAngleStrength;
+			#endif
 			float _ShadowOffset;
 			float _ShadowStrength;
 			float _LightingIgnoreAmbientColor;
@@ -5294,6 +6258,266 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 				#endif
 				float4 decalColor = 1;
 				float2 uv = 0;
+				#ifdef GEOM_TYPE_BRANCH
+				PoiDecal Decal0;
+				PoiInitStruct(PoiDecal, Decal0)
+				Decal0.m_DecalMaskChannel 					 = (0.0 /*_Decal0MaskChannel*/);
+				Decal0.m_DecalGlobalMask 					 = (0.0 /*_Decal0GlobalMask*/);
+				Decal0.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal0GlobalMaskBlendType*/);
+				Decal0.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal0ApplyGlobalMaskIndex*/);
+				Decal0.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal0ApplyGlobalMaskBlendType*/);
+				Decal0.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal0.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal0.m_DecalTextureUV 					 = (0.0 /*_DecalTextureUV*/);
+				Decal0.m_DecalColor 						 = float4(1,1,1,1);
+				Decal0.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColorThemeIndex*/);
+				Decal0.m_DecalTiled 						 = (0.0 /*_DecalTiled*/);
+				Decal0.m_DecalBlendType 					 = (0.0 /*_DecalBlendType*/);
+				Decal0.m_DecalRotation 						 = (0.0 /*_DecalRotation*/);
+				Decal0.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal0.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal0.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal0.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed*/);
+				Decal0.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength*/);
+				Decal0.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha_Windows112D2;
+				Decal0.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha*/);
+				Decal0.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled*/);
+				Decal0.m_DecalHueShift 						 = (0.0 /*_DecalHueShift*/);
+				Decal0.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed*/);
+				Decal0.m_DecalDepth 						 = (0.0 /*_Decal0Depth*/);
+				Decal0.m_DecalHueAngleStrength 				 = (0.0 /*_Decal0HueAngleStrength*/);
+				Decal0.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal0ChannelSeparationEnable*/);
+				Decal0.m_DecalChannelSeparation 			 = (0.0 /*_Decal0ChannelSeparation*/);
+				Decal0.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal0ChannelSeparationPremultiply*/);
+				Decal0.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal0ChannelSeparationHue*/);
+				Decal0.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal0ChannelSeparationVertical*/);
+				Decal0.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal0ChannelSeparationAngleStrength*/);
+				Decal0.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal0.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal0ScaleBand*/);
+				Decal0.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal0RotationBand*/);
+				Decal0.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal0AlphaBand*/);
+				Decal0.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal0EmissionBand*/);
+				Decal0.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal0.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand0*/);
+				Decal0.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed0*/);
+				Decal0.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType0*/);
+				Decal0.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC0*/);
+				Decal0.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal0SideBand*/);
+				Decal0.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal0.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal0ChannelSeparationBand*/);
+				Decal0.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal0ChannelSeparationEnable*/))
+				{
+					Decal0.SampleDecal(_DecalTexture, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal0.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal0.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef GEOM_TYPE_BRANCH_DETAIL
+				PoiDecal Decal1;
+				PoiInitStruct(PoiDecal, Decal1)
+				Decal1.m_DecalMaskChannel 					 = (0.0 /*_Decal1MaskChannel*/);
+				Decal1.m_DecalGlobalMask 					 = (0.0 /*_Decal1GlobalMask*/);
+				Decal1.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal1GlobalMaskBlendType*/);
+				Decal1.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal1ApplyGlobalMaskIndex*/);
+				Decal1.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal1ApplyGlobalMaskBlendType*/);
+				Decal1.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal1.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal1.m_DecalTextureUV 					 = (0.0 /*_DecalTexture1UV*/);
+				Decal1.m_DecalColor 						 = float4(1,1,1,1);
+				Decal1.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor1ThemeIndex*/);
+				Decal1.m_DecalTiled 						 = (0.0 /*_DecalTiled1*/);
+				Decal1.m_DecalBlendType 					 = (0.0 /*_DecalBlendType1*/);
+				Decal1.m_DecalRotation 						 = (0.0 /*_DecalRotation1*/);
+				Decal1.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal1.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal1.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal1.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed1*/);
+				Decal1.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength1*/);
+				Decal1.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha1_Windows112D2;
+				Decal1.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha1*/);
+				Decal1.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled1*/);
+				Decal1.m_DecalHueShift 						 = (0.0 /*_DecalHueShift1*/);
+				Decal1.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed1*/);
+				Decal1.m_DecalDepth 						 = (0.0 /*_Decal1Depth*/);
+				Decal1.m_DecalHueAngleStrength 				 = (0.0 /*_Decal1HueAngleStrength*/);
+				Decal1.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal1ChannelSeparationEnable*/);
+				Decal1.m_DecalChannelSeparation 			 = (0.0 /*_Decal1ChannelSeparation*/);
+				Decal1.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal1ChannelSeparationPremultiply*/);
+				Decal1.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal1ChannelSeparationHue*/);
+				Decal1.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal1ChannelSeparationVertical*/);
+				Decal1.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal1ChannelSeparationAngleStrength*/);
+				Decal1.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal1.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal1ScaleBand*/);
+				Decal1.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal1RotationBand*/);
+				Decal1.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal1AlphaBand*/);
+				Decal1.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal1EmissionBand*/);
+				Decal1.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal1.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand1*/);
+				Decal1.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed1*/);
+				Decal1.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType1*/);
+				Decal1.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC1*/);
+				Decal1.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal1SideBand*/);
+				Decal1.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal1.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal1ChannelSeparationBand*/);
+				Decal1.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE1) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal1ChannelSeparationEnable*/))
+				{
+					Decal1.SampleDecal(_DecalTexture1, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal1.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal1.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef GEOM_TYPE_FROND
+				PoiDecal Decal2;
+				PoiInitStruct(PoiDecal, Decal2)
+				Decal2.m_DecalMaskChannel 					 = (0.0 /*_Decal2MaskChannel*/);
+				Decal2.m_DecalGlobalMask 					 = (0.0 /*_Decal2GlobalMask*/);
+				Decal2.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal2GlobalMaskBlendType*/);
+				Decal2.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal2ApplyGlobalMaskIndex*/);
+				Decal2.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal2ApplyGlobalMaskBlendType*/);
+				Decal2.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal2.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal2.m_DecalTextureUV 					 = (0.0 /*_DecalTexture2UV*/);
+				Decal2.m_DecalColor 						 = float4(1,1,1,1);
+				Decal2.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor2ThemeIndex*/);
+				Decal2.m_DecalTiled 						 = (0.0 /*_DecalTiled2*/);
+				Decal2.m_DecalBlendType 					 = (0.0 /*_DecalBlendType2*/);
+				Decal2.m_DecalRotation 						 = (0.0 /*_DecalRotation2*/);
+				Decal2.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal2.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal2.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal2.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed2*/);
+				Decal2.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength2*/);
+				Decal2.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha2_Windows112D2;
+				Decal2.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha2*/);
+				Decal2.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled2*/);
+				Decal2.m_DecalHueShift 						 = (0.0 /*_DecalHueShift2*/);
+				Decal2.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed2*/);
+				Decal2.m_DecalDepth 						 = (0.0 /*_Decal2Depth*/);
+				Decal2.m_DecalHueAngleStrength 				 = (0.0 /*_Decal2HueAngleStrength*/);
+				Decal2.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal2ChannelSeparationEnable*/);
+				Decal2.m_DecalChannelSeparation 			 = (0.0 /*_Decal2ChannelSeparation*/);
+				Decal2.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal2ChannelSeparationPremultiply*/);
+				Decal2.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal2ChannelSeparationHue*/);
+				Decal2.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal2ChannelSeparationVertical*/);
+				Decal2.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal2ChannelSeparationAngleStrength*/);
+				Decal2.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal2.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal2ScaleBand*/);
+				Decal2.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal2RotationBand*/);
+				Decal2.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal2AlphaBand*/);
+				Decal2.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal2EmissionBand*/);
+				Decal2.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal2.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand2*/);
+				Decal2.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed2*/);
+				Decal2.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType2*/);
+				Decal2.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC2*/);
+				Decal2.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal2SideBand*/);
+				Decal2.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal2.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal2ChannelSeparationBand*/);
+				Decal2.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE2) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal2ChannelSeparationEnable*/))
+				{
+					Decal2.SampleDecal(_DecalTexture2, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal2.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal2.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
+				#ifdef DEPTH_OF_FIELD_COC_VIEW
+				PoiDecal Decal3;
+				PoiInitStruct(PoiDecal, Decal3)
+				Decal3.m_DecalMaskChannel 					 = (0.0 /*_Decal3MaskChannel*/);
+				Decal3.m_DecalGlobalMask 					 = (0.0 /*_Decal3GlobalMask*/);
+				Decal3.m_DecalGlobalMaskBlendType 			 = (2.0 /*_Decal3GlobalMaskBlendType*/);
+				Decal3.m_DecalApplyGlobalMaskIndex 			 = (0.0 /*_Decal3ApplyGlobalMaskIndex*/);
+				Decal3.m_DecalApplyGlobalMaskBlendType 		 = (0.0 /*_Decal3ApplyGlobalMaskBlendType*/);
+				Decal3.m_DecalTexture_ST 					 = float4(1,1,0,0);
+				Decal3.m_DecalTexturePan 					 = float4(0,0,0,0);
+				Decal3.m_DecalTextureUV 					 = (0.0 /*_DecalTexture3UV*/);
+				Decal3.m_DecalColor 						 = float4(1,1,1,1);
+				Decal3.m_DecalColorThemeIndex 				 = (0.0 /*_DecalColor3ThemeIndex*/);
+				Decal3.m_DecalTiled 						 = (0.0 /*_DecalTiled3*/);
+				Decal3.m_DecalBlendType 					 = (0.0 /*_DecalBlendType3*/);
+				Decal3.m_DecalRotation 						 = (0.0 /*_DecalRotation3*/);
+				Decal3.m_DecalScale 						 = float4(0.285,0.84,0,0);
+				Decal3.m_DecalSideOffset 					 = float4(0,0,0,0);
+				Decal3.m_DecalPosition 						 = float4(0.84,0.48,0,0);
+				Decal3.m_DecalRotationSpeed 				 = (0.0 /*_DecalRotationSpeed3*/);
+				Decal3.m_DecalEmissionStrength 				 = (0.0 /*_DecalEmissionStrength3*/);
+				Decal3.m_DecalBlendAlpha_Windows112D2 					 = _DecalBlendAlpha3_Windows112D2;
+				Decal3.m_DecalOverrideAlpha 				 = (0.0 /*_DecalOverrideAlpha3*/);
+				Decal3.m_DecalHueShiftEnabled 				 = (0.0 /*_DecalHueShiftEnabled3*/);
+				Decal3.m_DecalHueShift 						 = (0.0 /*_DecalHueShift3*/);
+				Decal3.m_DecalHueShiftSpeed 				 = (0.0 /*_DecalHueShiftSpeed3*/);
+				Decal3.m_DecalDepth 						 = (0.0 /*_Decal3Depth*/);
+				Decal3.m_DecalHueAngleStrength 				 = (0.0 /*_Decal3HueAngleStrength*/);
+				Decal3.m_DecalChannelSeparationEnable 		 = (0.0 /*_Decal3ChannelSeparationEnable*/);
+				Decal3.m_DecalChannelSeparation 			 = (0.0 /*_Decal3ChannelSeparation*/);
+				Decal3.m_DecalChannelSeparationPremultiply 	 = (0.0 /*_Decal3ChannelSeparationPremultiply*/);
+				Decal3.m_DecalChannelSeparationHue 			 = (0.0 /*_Decal3ChannelSeparationHue*/);
+				Decal3.m_DecalChannelSeparationVertical 	 = (0.0 /*_Decal3ChannelSeparationVertical*/);
+				Decal3.m_DecalChannelSeparationAngleStrength = (0.0 /*_Decal3ChannelSeparationAngleStrength*/);
+				Decal3.Init(decalMask);
+				#if defined(POI_AUDIOLINK)
+				Decal3.m_AudioLinkDecalScaleBand 				= (0.0 /*_AudioLinkDecal3ScaleBand*/);
+				Decal3.m_AudioLinkDecalScale 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalRotationBand 			= (0.0 /*_AudioLinkDecal3RotationBand*/);
+				Decal3.m_AudioLinkDecalRotation 				= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalAlphaBand 				= (0.0 /*_AudioLinkDecal3AlphaBand*/);
+				Decal3.m_AudioLinkDecalAlpha 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalEmissionBand 			= (0.0 /*_AudioLinkDecal3EmissionBand*/);
+				Decal3.m_AudioLinkDecalEmission 				= float4(0,0,0,0);
+				Decal3.m_DecalRotationCTALBand 					= (0.0 /*_DecalRotationCTALBand3*/);
+				Decal3.m_DecalRotationCTALSpeed 				= (0.0 /*_DecalRotationCTALSpeed3*/);
+				Decal3.m_DecalRotationCTALType 					= (0.0 /*_DecalRotationCTALType3*/);
+				Decal3.m_AudioLinkDecalColorChord 				= (0.0 /*_AudioLinkDecalCC3*/);
+				Decal3.m_AudioLinkDecalSideBand 				= (0.0 /*_AudioLinkDecal3SideBand*/);
+				Decal3.m_AudioLinkDecalSideMin 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalSideMax 					= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalChannelSeparation 		= float4(0,0,0,0);
+				Decal3.m_AudioLinkDecalChannelSeparationBand 	= (0.0 /*_AudioLinkDecal3ChannelSeparationBand*/);
+				Decal3.InitAudiolink(poiMods);
+				#endif
+				#if defined(PROP_DECALTEXTURE3) || !defined(OPTIMIZER_ENABLED)
+				if(!(0.0 /*_Decal3ChannelSeparationEnable*/))
+				{
+					Decal3.SampleDecal(_DecalTexture3, poiMods, poiLight, poiMesh, poiCam);
+				}
+				#else
+				Decal3.SampleDecalNoTexture(poiMods, poiLight, poiMesh, poiCam);
+				#endif
+				Decal3.Apply(alphaOverride, decalAlpha, poiFragData, poiMesh, poiCam, poiMods, poiLight);
+				#endif
 				if (alphaOverride)
 				{
 					poiFragData.alpha *= decalAlpha;
@@ -6278,11 +7502,16 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi 8.1/Poiyomi Toon/b46fbd2b2ab1fbe449790cb8
 			BlendOp [_BlendOp], [_BlendOpAlpha]
 			Blend [_SrcBlend] [_DstBlend], [_SrcBlendAlpha] [_DstBlendAlpha]
 			CGPROGRAM
+ #define DEPTH_OF_FIELD_COC_VIEW 
+ #define GEOM_TYPE_BRANCH 
+ #define GEOM_TYPE_BRANCH_DETAIL 
+ #define GEOM_TYPE_FROND 
  #define VIGNETTE_MASKED 
  #define _LIGHTINGMODE_FLAT 
  #define _STOCHASTICMODE_DELIOT_HEITZ 
  #define _SUNDISK_HIGH_QUALITY 
  #define _SUNDISK_SIMPLE 
+ #define PROP_DECALMASK 
  #define PROP_FLIPBOOKTEXARRAY 
  #define PROP_FLIPBOOKMASK 
  #define PROP_GLITTERMASK 
