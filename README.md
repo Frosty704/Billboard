@@ -2,9 +2,8 @@
 ![billboardheaderredux2](https://user-images.githubusercontent.com/36753686/235922298-06560e71-f736-4e84-9e72-04796e7ba5fd.png)
 
 
-[![Download](https://img.shields.io/badge/DOWNLOAD-3.1.2-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/v3.1.2/Frosty.Billboard.v3.1.2.unitypackage)
 [![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4(MAY%20BE%20BUGGY)-orange)](https://github.com/Frosty704/Billboard/releases/tag/main-v4)
-[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=c032JMb9ef0) 
+[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=ydBXFQ7-eQU) 
 
 
 ## Frosty's billboard is a speech bubble prefab for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText) making use of VRChat Avatar Dynamics and Unity Constraints, making it easier to converse as a mute without being a global broadcast via the in-game chatbox
@@ -89,7 +88,7 @@ Required parameter space for the KAT text system will depend on how fast you wan
 - PC ONLY. KAT uses a custom shader and the board itself uses constraints which is not quest supported.
 
 
-# [Video Installation](https://www.youtube.com/watch?v=c032JMb9ef0)
+# [Video Installation](https://www.youtube.com/watch?v=ydBXFQ7-eQU)
 
 
 # Discord
