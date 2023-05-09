@@ -2,7 +2,7 @@
 ![billboardheaderredux2](https://user-images.githubusercontent.com/36753686/235922298-06560e71-f736-4e84-9e72-04796e7ba5fd.png)
 
 
-[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4(MAY%20BE%20BUGGY)-orange)](https://github.com/Frosty704/Billboard/releases/tag/main-v4)
+[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-V4-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/main-v4/Frosty.Billboard.V4_Release3.unitypackage)
 [![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=ydBXFQ7-eQU) 
 
 
