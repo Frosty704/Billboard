@@ -98,7 +98,7 @@ TTS Voice Wizard [<img src="https://assets-global.website-files.com/6257adef9386
 
 I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord](https://discord.gg/rqcWHje3hn) 
 
-and or DM me Frosty704#4638
+and or DM me frosty704
 
 Feel free to join the [group!](https://vrc.group/FROSTY.8688) would love to meet anyone using my prefab
 
