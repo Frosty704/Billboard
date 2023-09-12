@@ -69,7 +69,7 @@ Required parameter space for the KAT text system will depend on how fast you wan
 
 ![typingdotsindicator](https://user-images.githubusercontent.com/36753686/236354712-a617f28c-75c1-4591-86de-860f6feb9fcc.gif)
 
- - Customizability made easy!
+ - Customizability made easy! [More examples here](https://github.com/Frosty704/Billboard/wiki/1.-Home-%7C-Showcase)
 <img src="https://user-images.githubusercontent.com/36753686/216710639-160766ef-c096-4c22-9faf-93d7e5dc267c.gif" width="640" height="360">
 
 ![w11 mats](https://user-images.githubusercontent.com/36753686/236354192-58036f1f-5e04-4ee3-891c-3e78bd6fae45.gif)
@@ -99,8 +99,6 @@ TTS Voice Wizard [<img src="https://assets-global.website-files.com/6257adef9386
 I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord](https://discord.gg/rqcWHje3hn) 
 
 and or DM me frosty704
-
-Feel free to join the [group!](https://vrc.group/FROSTY.8688) would love to meet anyone using my prefab
 
 
 # Credits
