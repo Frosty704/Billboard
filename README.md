@@ -1,5 +1,5 @@
 # About
-![billboardheaderredux3 copy](https://github.com/Frosty704/Billboard/assets/36753686/0d168af9-1c0f-4acd-960f-2efce1ff014a)
+![billboardheaderredux3 copy](https://github.com/Frosty704/Billboard/assets/36753686/fe102ccf-64d5-4490-9ac5-c187cad653cf)
 ![VRChat_2023-09-15_05-33-16 125_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/f083a185-4c65-4800-8cd6-19efa9fd50b4)
 
 
