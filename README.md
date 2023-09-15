@@ -3,10 +3,10 @@
 ![VRChat_2023-09-15_05-33-16 125_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/f083a185-4c65-4800-8cd6-19efa9fd50b4)
 
 
-[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-Billboard_V4-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/main-v4/Frosty.Billboard.V4_Release3.unitypackage)
-[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=ydBXFQ7-eQU) 
-
 # What/who is this for?
+[![Downloadv4](https://img.shields.io/badge/DOWNLOAD-Billboard_V4-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/main-v4/Frosty.Billboard.V4_Release3.unitypackage)
+[![Tutorial](https://img.shields.io/badge/-Installation%20Tutorial%20Video-blue)](https://www.youtube.com/watch?v=ydBXFQ7-eQU)
+
 Frosty's billboard is a ready-to-go speech bubble prefab for the [KAT (KillFrenzyAvatarText)](https://github.com/killfrenzy96/KillFrenzyAvatarText), making it easier to converse as a mute for more direct conversation (no big chatbox above your head!)
 
 - Paired with free speech-to-text OSC apps such as [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard) or [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT)
@@ -17,7 +17,7 @@ Frosty's billboard is a ready-to-go speech bubble prefab for the [KAT (KillFrenz
 
 - Focuses on being easy as possible to setup <sup>until i can code an autoinstall script</sup>
 
-- I made this because I don't believe in paying to talk 
+- I made this because I don't believe in paying to talk
 
 # Requirements and Performance
 - A program able to output to the KAT, such as [TTS-Voice-Wizard](https://github.com/VRCWizard/TTS-Voice-Wizard), [VRCTextboxSTT](https://github.com/I5UCC/VRCTextboxSTT), [KatOscApp](https://github.com/killfrenzy96/KatOscApp/releases)
