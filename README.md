@@ -101,6 +101,11 @@ I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef
 
 and or DM me frosty704
 
+# Todo
+VRCFury install support (maybe idk)
+update world constraint to [WorldSync](https://github.com/JuzoVR/WorldSync)
+actual showcase and usage ingame tutorial
+full video tutorial on how to make it work with ttsvoicewizard and textboxstt
 
 # Credits
 - [KillFrenzyAvatarText](https://github.com/killfrenzy96/KillFrenzyAvatarText)
