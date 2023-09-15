@@ -1,5 +1,5 @@
 # About
-![billboardheaderredux2](https://user-images.githubusercontent.com/36753686/235922298-06560e71-f736-4e84-9e72-04796e7ba5fd.png)
+![billboardheaderredux3 copy](https://github.com/Frosty704/Billboard/assets/36753686/0d168af9-1c0f-4acd-960f-2efce1ff014a)
 ![VRChat_2023-09-15_05-33-16 125_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/f083a185-4c65-4800-8cd6-19efa9fd50b4)
 
 
@@ -102,10 +102,13 @@ I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef
 and or DM me frosty704
 
 # Todo
-VRCFury install support (maybe idk)
 update world constraint to [WorldSync](https://github.com/JuzoVR/WorldSync)
+
 actual showcase and usage ingame tutorial
+
 full video tutorial on how to make it work with ttsvoicewizard and textboxstt
+
+longterm auto install script
 
 # Credits
 - [KillFrenzyAvatarText](https://github.com/killfrenzy96/KillFrenzyAvatarText)
