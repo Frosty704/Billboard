@@ -1,5 +1,6 @@
 # About
 ![billboardheaderredux2](https://user-images.githubusercontent.com/36753686/235922298-06560e71-f736-4e84-9e72-04796e7ba5fd.png)
+![VRChat_2023-09-15_05-33-16 125_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/f083a185-4c65-4800-8cd6-19efa9fd50b4)
 
 
 [![Downloadv4](https://img.shields.io/badge/DOWNLOAD-Billboard_V4-brightgreen)](https://github.com/Frosty704/Billboard/releases/download/main-v4/Frosty.Billboard.V4_Release3.unitypackage)
