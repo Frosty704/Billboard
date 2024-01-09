@@ -1,6 +1,7 @@
 # About
 ![billboardheaderredux3 copy](https://github.com/Frosty704/Billboard/assets/36753686/fe102ccf-64d5-4490-9ac5-c187cad653cf)
-![VRChat_2023-09-15_05-33-16 125_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/f083a185-4c65-4800-8cd6-19efa9fd50b4)
+![VRChat_2024-01-08_05-32-57 318_2560x1440](https://github.com/Frosty704/Billboard/assets/36753686/1ca4e703-ff75-4b2c-a938-023de902b3d3)
+
 
 
 # What/who is this for?
