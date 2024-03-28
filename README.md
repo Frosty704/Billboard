@@ -28,6 +28,7 @@ Frosty's billboard is a ready-to-go speech bubble prefab for the [KAT (KillFrenz
 - 55 bits of parameter space _**minimum**_, (ideally 87 for not painfully slow writing speed)
 - The animator uses Write Defaults off (as does KAT), It is a bad idea to mix WD on and WD off (stuff will break)
   - Either make a reset layer and use write default off logic <sub>the correct option</sub>, or turn on all write defaults with something like [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager)
+  - If you're unsure what write defaults is, please read into it [here!](https://notes.sleightly.dev/write-defaults/)
 - PC only
 
 Performance:
@@ -83,6 +84,11 @@ TTS Voice Wizard [<img src="https://assets-global.website-files.com/6257adef9386
 I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6ca814282eca7172c6_icon_clyde_white_RGB.svg"  width="20" height="20"> Discord](https://discord.gg/rqcWHje3hn) 
 
 and or DM me frosty704
+
+# **COMMON ISSUES**
+
+Text flickering in/out and being unable to fill the box
+[Write defaults](https://notes.sleightly.dev/write-defaults/) are 99% of the time the issue, you will have to turn them all off. If your avatar has issues after this, look into creating a reset layer.
 
 # Todo
 update world constraint to [WorldSync](https://github.com/JuzoVR/WorldSync)
