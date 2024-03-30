@@ -85,10 +85,8 @@ I5UCC's (TextboxSTT) [<img src="https://assets-global.website-files.com/6257adef
 
 and or DM me frosty704
 
-# **COMMON ISSUES**
+please see here first before contacting me https://github.com/Frosty704/Billboard/wiki/Common-Issues
 
-Text flickering in/out and being unable to fill the box
-[Write defaults](https://notes.sleightly.dev/write-defaults/) are 99% of the time the issue, you will have to turn them all off. If your avatar has issues after this, look into creating a reset layer.
 
 # Todo
 update world constraint to [WorldSync](https://github.com/JuzoVR/WorldSync)
