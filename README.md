@@ -28,7 +28,7 @@ Frosty's billboard is a ready-to-go speech bubble prefab for the [KAT (KillFrenz
 - 55 bits of parameter space _**minimum**_, (ideally 87 for not painfully slow writing speed)
 - The animator uses Write Defaults off (as does KAT), It is a bad idea to mix WD on and WD off (stuff will break)
   - Either make a reset layer and use write default off logic <sub>the correct option</sub>, or turn on all write defaults with something like [VRLabs AV3 Manager](https://github.com/VRLabs/Avatars-3.0-Manager)
-  - If you're unsure what write defaults is, please read into it [here!](https://notes.sleightly.dev/write-defaults/)
+  - If you're unsure what write defaults is, please read into it [here!](https://vrc.school/docs/Unity-Animations/Write-Defaults/)
 - PC only
 
 Performance:
